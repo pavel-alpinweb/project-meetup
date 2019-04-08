@@ -1,5 +1,9 @@
 .menu{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 500px; 
+    li{
+        padding-left: 50px;
+        background: svg-load('github.svg') no-repeat left center;
+    }
 }

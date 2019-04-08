@@ -1,4 +1,5 @@
-block variables
+include ./common/mixins
+include ./common/vars
 
 doctype html
 html(lang="ru")
@@ -7,7 +8,7 @@ html(lang="ru")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
     meta(content="width=device-width, initial-scale=1" name="viewport")
     
-    title Portfolio | #{title}
+    title #{title}
     link(rel='stylesheet' href='assets/styles/main.min.css')
   body
     .wrapper
@@ -17,4 +18,4 @@ html(lang="ru")
 
       include ./common/footer.pug
     
-    script(src="assets/scripts/blog.bundle.js")
+    script(src="assets/scripts/main.bundle.js")

@@ -3,13 +3,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
     entry: {
-        about: './src/assets/scripts/about.js',
-        auth: './src/assets/scripts/auth.js',
-        works: './src/assets/scripts/works.js',
-        blog: './src/assets/scripts/blog.js'
+        main: './src/assets/scripts/main.js'
     },
     output: {
-        filename: '[name].bundle.js'
+        filename: 'main.bundle.js'
     },
     plugins: [
         new UglifyJSPlugin({
