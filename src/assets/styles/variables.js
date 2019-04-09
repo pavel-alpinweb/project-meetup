@@ -1,10 +1,11 @@
 module.exports = {
-    "white": "#efeee9",
-    "beige": "#eeebdf",
-    "green": "#16c2aa",
-    "text-color": "#455a64",
-    "grey": "#373e42",
-    "light-grey": "#dfdcd5",
-    "test" : "#000"
+    "mainFont": "Roboto",
+    "accentFont": "Roboto Slab",
+    "mainBgColor": "rgb(75, 77, 79)",
+    "textColor": "rgb(36, 36, 36)",
+    "accentColor": "rgb(144, 210, 61)",
+    "textSize": "14px",
+    "titleFontSize": "50px",
+    "lineHeight": "16.8px"
   }
   
