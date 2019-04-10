@@ -1,7 +1,6 @@
 .test-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 33.3vh 33.3vh 33.3vh;
     height: 100%;
 }
 
@@ -12,6 +11,7 @@
     align-items: center;
     justify-content: center;
     background-color: #E7E7E7;
+    padding: 15px;
 }
 
 .test-grid__item--brown{
