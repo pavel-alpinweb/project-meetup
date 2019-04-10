@@ -1,0 +1,80 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+}
+
+.form{
+    box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 100%;
+}
+
+.form__item{
+    margin-bottom: 20px;
+    width:100%;
+    text-align: center;
+}
+
+.form__item.form__item--last{
+    margin-bottom: 40px;
+}
+
+.form__title{
+    color: rgb(37, 37, 37);
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.99px;
+}
+
+.form__input{
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(255, 255, 255);
+    color: rgb(108, 108, 108);
+    font-family: $mainFont;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 0 13px;
+    line-height: 54px;
+    outline: none;
+    &:focus{
+        border: 1px solid $accentColor;
+    }
+    @include placeholder {
+        color: rgb(190, 190, 190);
+        font-family: $mainFont;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 54px;
+    }
+}
+
+.form__submit-btn{
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 700;
+    height: 60px;
+    border-radius: 5px;
+    background-color: $accentColor;
+    width: 100%;
+    transition: all .3s;
+    &:hover{
+        background-color: #ffce13;
+    }
+}
+
+.form__text{
+    color: rgb(108, 108, 108);
+    font-family: $mainFont;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+}
