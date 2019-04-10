@@ -1,0 +1,10 @@
+.text{
+    color: $textColor;
+    font-family: $mainFont;
+    font-size: $textSize;
+    font-weight: 300;
+    line-height: $lineHeight;
+    p{
+        margin-bottom: 20px;
+    }
+}
