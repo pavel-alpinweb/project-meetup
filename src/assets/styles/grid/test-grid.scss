@@ -1,0 +1,11 @@
+.test-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33.3vh 33.3vh 33.3vh;
+    height: 100%;
+}
+
+.test-grid__item{
+    border:1px solid #000;
+    min-height: 33.3vh;
+}

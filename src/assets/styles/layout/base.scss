@@ -9,6 +9,10 @@ body, html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .maincontent{
+    height: 100%;
+  }
   
   .wrapper {
     overflow: hidden;
