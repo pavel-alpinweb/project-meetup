@@ -8,4 +8,8 @@
 .test-grid__item{
     border:1px solid #000;
     min-height: 33.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E7E7;
 }
