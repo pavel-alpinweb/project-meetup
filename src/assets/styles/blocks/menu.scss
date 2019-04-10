@@ -1,9 +1,26 @@
-.menu{
+.menu__list{
     display: flex;
-    justify-content: space-around;
-    width: 500px; 
-    li{
-        padding-left: 50px;
-        background: svg-load('github.svg') no-repeat left center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.menu__item{
+    margin-right: 45px;
+    &:last-of-type{
+        margin-right: 0;
+    }
+}
+
+.menu__link{
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+    line-height: 18px;
+    &:hover{
+        color: $accentColor;
     }
 }
