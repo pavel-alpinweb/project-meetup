@@ -1,0 +1,14 @@
+.big-button{
+    height: 55px;
+    border-radius: 15px;
+    background-color: $accentColor;
+    padding: 0 28px;
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .3s;
+    &:hover{
+        background-color: #ffce13;
+    }
+}
