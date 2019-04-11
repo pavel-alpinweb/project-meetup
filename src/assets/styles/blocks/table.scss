@@ -1,0 +1,68 @@
+.table{
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(55, 55, 55);
+    overflow: hidden;
+}
+
+.table__row{
+    height: 75px;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 45px;
+    &:nth-child(2n){
+        background-color: $mainBgColor;
+    }
+}
+
+.table__row--header{
+    background-color: rgb(163, 204, 64);
+}
+
+.table__plus-icon{
+    width: 33px;
+    height: 33px;
+    fill: rgb(255, 255, 255);
+}
+
+.table__cell-content{
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 26.4px;
+}
+
+.table__cell-title{
+    color: rgb(255, 255, 255);
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+}
+
+.table__cell-left{
+    width: 100%;
+    min-width: 136px;
+    max-width: 150px;
+}
+
+.table__cell-center{
+    width: 100%;
+    max-width: 500px;
+    min-width: 130px;
+}
+
+.table__cell-right{
+    width: 100%;
+    max-width: 50px;
+    min-width: 50px;
+}
