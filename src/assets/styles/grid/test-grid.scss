@@ -17,6 +17,10 @@
     background-color: $mainBgColor;
 }
 
+.test-grid__item--green{
+    background-color: $accentColor;
+}
+
 .test-grid__item--big{
     height: 50vh;
 }
