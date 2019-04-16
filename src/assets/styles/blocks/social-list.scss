@@ -2,6 +2,13 @@
     display: flex;
 }
 
+.social-list--big{
+    .social-list__icon{
+        width: 48px;
+        height:45px;
+    } 
+}
+
 .social-list__item{
     margin-right: 7px;
     &:last-of-type{
