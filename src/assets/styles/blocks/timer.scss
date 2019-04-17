@@ -1,0 +1,48 @@
+.timer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid $accentColor;
+    height: 198px;
+}
+
+.timer__item{
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    &:last-child{
+        &:after{
+            display: none;
+        }
+    }
+    &:after{
+        content:':';
+        color: rgb(255, 255, 255);
+        font-family: $accentFont;
+        font-size: 130px;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 0.75em;
+        margin: 0 35px;
+    }
+}
+
+.timer__count{
+    color: rgb(255, 255, 255);
+    font-family: $accentFont;
+    font-size: 130px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 0.75em;
+    margin-bottom: 28px;
+}
+
+.timer__count-name{
+    color: rgb(255, 255, 255);
+    font-family: $accentFont;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
