@@ -3,4 +3,8 @@
     height: 19px;
     fill:#fff;
     cursor: pointer;
+    transition: fill .3s;
+    &:hover{
+        fill: rgb(255, 206, 19);
+    }
 }
