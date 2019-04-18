@@ -1,17 +1,18 @@
-.timer
-    .timer__item
-        .timer__container
-            .timer__count#days 
-            .timer__count-name DAYS
-    .timer__item
-        .timer__container
-            .timer__count#hours
-            .timer__count-name HOURS
-    .timer__item
-        .timer__container
-            .timer__count#minutes
-            .timer__count-name MINUTES
-    .timer__item
-        .timer__container
-            .timer__count#seconds
-            .timer__count-name SECONDS
+mixin timer(final)
+    .timer(data-role="timer", data-final=`${final}`)
+        .timer__item
+            .timer__container
+                .timer__count(data-days)
+                .timer__count-name DAYS
+        .timer__item
+            .timer__container
+                .timer__count(data-hours)
+                .timer__count-name HOURS
+        .timer__item
+            .timer__container
+                .timer__count(data-minutes)
+                .timer__count-name MINUTES
+        .timer__item
+            .timer__container
+                .timer__count(data-seconds)
+                .timer__count-name SECONDS
