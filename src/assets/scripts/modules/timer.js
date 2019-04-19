@@ -1,4 +1,3 @@
-import $ from "jquery";
 $(function () {
     var element = $('[data-role="timer"]');
     element.click(function(){

@@ -1,0 +1,23 @@
+.gallery{
+    width: 100%;
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.grid-sizer,.gallery__item{
+    width: 33.333%;
+    transition: all .3s;
+    position: relative;
+    display: block;
+    &:hover{
+        transform: scale(1.2);
+        z-index: 2;
+    }
+    img{
+        display: block;
+        cursor: pointer;
+    }
+}

@@ -22,5 +22,9 @@
 }
 
 .test-grid__item--big{
-    height: 50vh;
+    min-height: 50vh;
+}
+
+.test-grid__item--auto{
+    min-height: 100vh;
 }
