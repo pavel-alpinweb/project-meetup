@@ -6,8 +6,20 @@
 .speakers__icon{
     width: 198px;
     height: 211px;
-    background: svg-load('speaker-1.svg') no-repeat center;
     margin: 0 auto 30px;
+    background-size: cover;
+}
+
+.speakers__icon--community{
+    background: svg-load('speaker-1.svg') no-repeat center;
+}
+
+.speakers__icon--talk-shop{
+    background: svg-load('speaker-2.svg') no-repeat center;
+}
+
+.speakers__icon--war-stories{
+    background: svg-load('speaker-3.svg') no-repeat center;
 }
 
 .speakers__title{
