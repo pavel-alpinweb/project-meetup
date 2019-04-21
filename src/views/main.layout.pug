@@ -11,6 +11,17 @@ html(lang="ru")
     title #{title}
     link(rel='stylesheet' href='assets/styles/main.min.css')
   body
+    header.page-header(style="background-image:url(assets/content/workplace-1245776_1920.jpg);")
+      .page-header__content
+        .page-header__wrapper
+          .page-header-top
+            .page-header__left-top
+              include ./common/logo
+            .page-header__right-top
+              include ./common/menu
+          .page-header__center
+            include ./common/timer
+            +timer('2019,6,1')
     main.maincontent
       block content
     

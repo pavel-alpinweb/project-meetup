@@ -1,7 +1,7 @@
 module.exports = {
     "mainFont": "Roboto",
     "accentFont": "Roboto Slab",
-    "mainBgColor": "rgb(75, 77, 79)",
+    "mainBgColor": "#4b4d4f",
     "textColor": "rgb(36, 36, 36)",
     "accentColor": "rgb(144, 210, 61)",
     "textSize": "14px",
