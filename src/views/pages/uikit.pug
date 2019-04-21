@@ -8,14 +8,13 @@ block content
             include ../common/menu
         .test-grid__item.test-grid__item--brown
             include ../common/title
-            +title('title--light', 'Sponsor Our Event!')
+                |Sponsor Our Event!
         .test-grid__item.test-grid__item--brown
-            - mod = 'text--light';
             include ../common/text
                 p The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...
-    
+
                 p Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!
-    
+
                 p 
                     |It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)
                     |Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!
@@ -27,11 +26,10 @@ block content
             include ../common/table
         .test-grid__item
             include ../common/envato-elite
-        .test-grid__item.test-grid__item--big
-            include ../common/teammate
         .test-grid__item
             include ../common/big-button
-            +big-button('', 'value')
+        .test-grid__item.test-grid__item--big
+            include ../common/teammate
         .test-grid__item.test-grid__item--big
             include ../common/teammate-bage
         .test-grid__item.test-grid__item--brown
@@ -54,9 +52,3 @@ block content
             +timer('2019,6,1')
         .test-grid__item.test-grid__item--big.test-grid__item--auto
             include ../common/gallery
-        .test-grid__item
-            +title('', 'Community')
-        .test-grid__item
-            - mod = '';
-            include ../common/text
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laborum eos? Dolorum fugit repellat atque. Consequuntur consectetur voluptas ad quis dolor dolores libero deleniti maiores a, tenetur quo asperiores eaque.
