@@ -78,5 +78,18 @@ block content
                     include ../common/teammate
                .speakers-section__border-grid  
                     include ../common/teammate
+    .sponsor-section
+        .sponsor-section__wrapper
+           .sponsor-section__top 
+                +title('title--light', 'Sponsor Our Event!')
+           .sponsor-section__center-top
+                -mod = 'text--light'
+                include ../common/text
+                    |Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
+           .sponsor-section__center-bottom
+                include ../common/sponsors
+           .sponsor-section__bottom 
+                +big-button('', 'Sponsor Us')
+        
 
 

@@ -1,0 +1,49 @@
+.sponsor-section{
+    background-color: $mainBgColor;
+    position: relative;
+    padding: 155px 0 127px;
+    &:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 125px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        z-index: 2;
+        background: linear-gradient(176.3deg,  transparent 50%, #fff 50%);
+    }
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 125px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        z-index: 2;
+        background: linear-gradient(-3.7deg,  transparent 50%, #fff 50%);
+    }
+}
+
+.sponsor-section__wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.sponsor-section__top{
+    margin-bottom: 20px;
+}
+
+.sponsor-section__center-top{
+    margin:0 auto 50px;
+    max-width: 670px;
+}
+
+.sponsor-section__center-bottom{
+    margin-bottom: 70px;
+}
