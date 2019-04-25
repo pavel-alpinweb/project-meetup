@@ -1,0 +1,28 @@
+.page-footer{
+    width: 100%;
+    height: 220px;
+    background-color: $accentColor;
+}
+
+.page-footer__wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page-footer__center{
+    margin-left: auto;
+}
+
+.page-footer__center-top{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-footer__right{
+    margin-left: auto;
+}
