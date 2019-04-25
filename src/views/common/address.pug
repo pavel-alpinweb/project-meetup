@@ -1,4 +1,5 @@
 .address
    .address__text Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia
-   include ./big-button 
-   +big-button('big-button--black', 'view map')
+   .address__bottom(data-role="map-swithcher")
+      include ./big-button 
+      +big-button('', 'view map')

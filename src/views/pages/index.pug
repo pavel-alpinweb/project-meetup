@@ -100,6 +100,17 @@ block content
                 |Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
         .gallery-section__bottom
             include ../common/gallery
+    .contacts-section
+        .contacts-section__background
+            include ../common/map 
+            .contacts-section__layer-label.hide(data-role="address-swithcher")
+                +big-button('big-button--black', 'View address')
+        .contacts-section__content(data-role="switch-content")
+            .contacts-section__wrapper
+                .contacts-section__left
+                    include ../common/address
+                .contacts-section__right
+                    include ../common/form-2
         
 
 
