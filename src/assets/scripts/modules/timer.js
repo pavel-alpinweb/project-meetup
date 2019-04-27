@@ -1,7 +1,6 @@
 $(function () {
     var element = $('[data-role="timer"]');
     element.click(function(){
-        console.log($(this).attr('data-final'));
         var current_date = $(this).attr('data-final');
 
         var target_date = new Date(current_date).getTime(); // установить дату обратного отсчета

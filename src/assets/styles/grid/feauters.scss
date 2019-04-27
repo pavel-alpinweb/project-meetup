@@ -1,13 +1,16 @@
-.feaiters{
+.feauters{
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     padding: 125px 10px 77px;
+    @media screen and (max-width:1364.5px){
+        padding: 125px 30px 77px;
+    }
 }
 
-.feaiters__item{
+.feauters__item{
     width: 100%;
     max-width: 302px;
 }

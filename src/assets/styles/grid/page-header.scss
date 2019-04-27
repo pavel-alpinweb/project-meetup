@@ -15,6 +15,11 @@
         bottom:10px;
         z-index: 1;
         background: svg-load('header-decor.svg') no-repeat center;
+        @media screen and (max-width:1364.5px){
+            left: 30px;
+            width: 570px;
+            background-size: contain;
+        }
     }
     &:before{
         content: '';
@@ -43,6 +48,9 @@
     height: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    @media screen and (max-width:1364.5px){
+        padding: 0 30px;
+    }
 }
 
 .page-header-top{
