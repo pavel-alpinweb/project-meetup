@@ -26,6 +26,9 @@
         z-index: 2;
         background: linear-gradient(-3.7deg,  transparent 50%, #fff 50%);
     }
+    @media screen and (max-width:1023.5px){
+        padding: 100px 0 120px;
+    }
 }
 
 .reward-section__wrapper{
@@ -41,6 +44,10 @@
 
 .reward-section__top{
     margin-bottom: 22px;
+    @media screen and (max-width:1023.5px){
+        max-width: 65vw;
+        margin-left: auto;
+    }
 }
 
 .reward-section__center{
@@ -48,6 +55,9 @@
     width: 100%;
     max-width: 670px;
     margin-left: auto;
+    @media screen and (max-width:1023.5px){
+        max-width: 60vw;
+    }
 }
 
 .reward-section__left-top{
@@ -62,5 +72,9 @@
         height: 257px;
         left: 30px;
         top: -118px;
+    }
+    @media screen and (max-width:1023.5px){
+        width: 240px;
+        height: 240px;
     }
 }

@@ -1,5 +1,8 @@
 .speakers-section{
     padding: 132px 0 179px;
+    @media screen and (max-width:1023.5px){
+        padding: 0;
+    }
 }
 
 .speakers-section__wrapper{
@@ -24,6 +27,12 @@
     grid-template-rows: 296px 296px 296px;
     grid-column-gap: 40px;
     grid-row-gap: 45px;
+    @media screen and (max-width:1023.5px){
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 296px 296px 296px 296px;
+    }
 }
 
 .speakers-section__center-grid{

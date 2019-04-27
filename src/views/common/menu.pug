@@ -1,4 +1,4 @@
-nav.menu
+nav.menu(data-role="menu")
     ul.menu__list
         li.menu__item
             a.menu__link(href="#") EVENT DETAILS
@@ -10,3 +10,5 @@ nav.menu
             a.menu__link(href="#") PAST EVENTS
         li.menu__item
             a.menu__link(href="#") CONTACT
+    .menu__close.laptop-hide.desctop-hide(data-role="close-menu")
+        +icon('arrow', 'to-top__icon')

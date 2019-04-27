@@ -1,0 +1,19 @@
+.btn-mnu {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $accentColor;
+	cursor: pointer;
+	position: relative;
+}
+.btn-mnu__row {
+	height: 2px;
+	width: 60%;
+	margin: 2px 0;
+	background-color: #fff;
+	position: relative;
+	transition: all .5s;
+}

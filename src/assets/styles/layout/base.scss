@@ -56,5 +56,23 @@ body, html {
   }
 
   .hide{
-    display: none;
+    display: none!important;
+  }
+
+  .tablet-hide{
+    @media screen and (min-width:768px) and (max-width:1023.5px){
+      display: none!important;
+    }
+  }
+
+  .laptop-hide{
+    @media screen and (min-width:1024px) and (max-width:1364.5px){
+      display: none!important;
+    }
+  }
+
+  .desctop-hide{
+    @media screen and (min-width:1365px){
+      display: none!important;
+    }
   }

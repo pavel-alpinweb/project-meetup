@@ -6,6 +6,9 @@
     border-radius: 20px;
     border: 2px solid $accentColor;
     height: 198px;
+    @media screen and (max-width:1023.5px){
+        height: 160px;
+    }
 }
 
 .timer__item{
@@ -26,6 +29,9 @@
         text-transform: uppercase;
         line-height: 0.75em;
         margin: 0 35px;
+        @media screen and (max-width:1023.5px){
+            font-size: 70px;
+        }
     }
 }
 
@@ -37,6 +43,9 @@
     text-transform: uppercase;
     line-height: 0.75em;
     margin-bottom: 28px;
+    @media screen and (max-width:1023.5px){
+        font-size: 70px;
+    }
 }
 
 .timer__count-name{
@@ -45,8 +54,14 @@
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
+    @media screen and (max-width:1023.5px){
+        font-size: 16px;
+    }
 }
 
 .timer__container {
     min-width: 146.3px;
+    @media screen and (max-width:1023.5px){
+        min-width: 70px;
+    }
 }

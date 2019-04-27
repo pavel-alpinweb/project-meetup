@@ -8,9 +8,15 @@
     @media screen and (max-width:1364.5px){
         padding: 125px 30px 77px;
     }
+    @media screen and (max-width:1023.5px){
+        padding: 30px;
+    }
 }
 
 .feauters__item{
     width: 100%;
     max-width: 302px;
+    @media screen and (max-width:1023.5px){
+        max-width: 32%;
+    }
 }

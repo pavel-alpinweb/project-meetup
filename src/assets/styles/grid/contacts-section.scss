@@ -6,6 +6,9 @@
 .contacts-section__background{
     height: 660px;
     position: relative;
+    @media screen and (max-width:1023.5px){
+        height: 50vh;
+    }
 }
 
 .contacts-section__layer-label{
@@ -23,6 +26,10 @@
     background-color: rgba(55, 55, 55, 0.8);
     display: flex;
     padding: 65px 0;
+    @media screen and (max-width:1023.5px){
+        position: static;
+        padding: 0;
+    }
 }
 
 .contacts-section__wrapper{
@@ -34,14 +41,25 @@
     display: flex;
     padding: 50px 70px;
     justify-content: space-between;
+    @media screen and (max-width:1023.5px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contacts-section__left{
     width: 100%;
     max-width: 258px;
+    @media screen and (max-width:1023.5px){
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .contacts-section__right{
     width: 100%;
     max-width: 400px;
+    @media screen and (max-width:1023.5px){
+        max-width: 100%;
+    }
 }

@@ -21,6 +21,9 @@
     @media screen and (max-width:1364.5px){
         max-width: 500px;
     }
+    @media screen and (max-width:1023.5px){
+        max-width: 46vw;
+    }
 }
 
 .description__right{
@@ -29,6 +32,10 @@
     margin-top: -264px;
     position: relative;
     z-index: 3;
+    @media screen and (max-width:1023.5px){
+        max-width: 46vw;
+        margin-top: 0;
+    }
 }
 
 .description__top-left{
