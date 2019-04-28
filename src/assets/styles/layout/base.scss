@@ -59,6 +59,13 @@ body, html {
     display: none!important;
   }
 
+  .mobile-hide{
+    @media screen and (max-width:767.5px){
+      display: none!important;
+    }
+  }
+
+
   .tablet-hide{
     @media screen and (min-width:768px) and (max-width:1023.5px){
       display: none!important;

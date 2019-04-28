@@ -15,6 +15,11 @@
     &:nth-child(2n){
         background-color: $mainBgColor;
     }
+    @media screen and (max-width:767.5px){
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
 }
 
 .table__row--header{
@@ -36,6 +41,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 26.4px;
+    @media screen and (max-width:767.5px){
+        white-space: normal;
+        text-align: center;
+    }
 }
 
 .table__cell-title{
@@ -47,6 +56,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 36px;
+    @media screen and (max-width:767.5px){
+        white-space: normal;
+        text-align: center;
+        color: rgb(163, 204, 64);
+    }
 }
 
 .table__cell-left{

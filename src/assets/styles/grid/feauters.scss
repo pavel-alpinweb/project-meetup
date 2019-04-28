@@ -11,6 +11,9 @@
     @media screen and (max-width:1023.5px){
         padding: 30px;
     }
+    @media screen and (max-width:767.5px){
+        flex-direction: column;
+    }
 }
 
 .feauters__item{
@@ -18,5 +21,8 @@
     max-width: 302px;
     @media screen and (max-width:1023.5px){
         max-width: 32%;
+    }
+    @media screen and (max-width:767.5px){
+        max-width: 100%;
     }
 }

@@ -33,6 +33,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 296px 296px 296px 296px;
     }
+    @media screen and (max-width:767.5px){
+        grid-column-gap: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: inherit;
+    }
 }
 
 .speakers-section__center-grid{
@@ -45,4 +50,8 @@
 .speakers-section__border-grid{
     border-radius: 15px;
     background-color: $accentColor;
+    @media screen and (max-width:767.5px){
+        min-height: 296px;
+        height: 100%;
+    }
 }

@@ -9,6 +9,10 @@
     @media screen and (max-width:1023.5px){
         height: 160px;
     }
+    @media screen and (max-width:767.5px){
+        height: 100px;
+        padding: 0 15px;
+    }
 }
 
 .timer__item{
@@ -32,6 +36,10 @@
         @media screen and (max-width:1023.5px){
             font-size: 70px;
         }
+        @media screen and (max-width:767.5px){
+            font-size: 35px;
+            margin: 0 10px;
+        }
     }
 }
 
@@ -46,6 +54,10 @@
     @media screen and (max-width:1023.5px){
         font-size: 70px;
     }
+    @media screen and (max-width:767.5px){
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
 }
 
 .timer__count-name{
@@ -57,11 +69,17 @@
     @media screen and (max-width:1023.5px){
         font-size: 16px;
     }
+    @media screen and (max-width:767.5px){
+        font-size: 8px;
+    }
 }
 
 .timer__container {
     min-width: 146.3px;
     @media screen and (max-width:1023.5px){
         min-width: 70px;
+    }
+    @media screen and (max-width:767.5px){
+        min-width: 25%;
     }
 }
