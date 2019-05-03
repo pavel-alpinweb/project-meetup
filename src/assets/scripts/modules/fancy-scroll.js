@@ -1,4 +1,5 @@
-$('[data-role="fancy-scroll"]').click(function() {
+$('[data-role="fancy-scroll"]').click(function(e) {
+    e.preventDefault();
     $("html, body").animate({
        scrollTop: $($(this).attr("data-slide")).offset().top + "px"
     }, {

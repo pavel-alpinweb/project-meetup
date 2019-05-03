@@ -4,7 +4,7 @@ include ../common/title
 include ../common/big-button
 
 block content
-    .description
+    .description#description
         .description__warapper
             .description__left
                 .description__top-left
@@ -50,7 +50,7 @@ block content
                 +big-button('', 'Bring on the swag!')
             .reward-section__left-top.mobile-hide
                 include ../common/envato-elite
-    .speakers-section
+    .speakers-section#speakers
         .speakers-section__wrapper
             .speakers-section__top
                 +title('', 'Speakers')
@@ -78,7 +78,7 @@ block content
                      include ../common/teammate
                 .speakers-section__border-grid  
                      include ../common/teammate
-    .sponsor-section
+    .sponsor-section#sponsor
         .sponsor-section__wrapper
            .sponsor-section__top 
                 +title('title--light', 'Sponsor Our Event!')
@@ -90,7 +90,7 @@ block content
                 include ../common/sponsors
            .sponsor-section__bottom 
                 +big-button('', 'Sponsor Us')
-    .gallery-section
+    .gallery-section#gallery
         .gallery-section__top
             .gallery-section__top-top
                 +title('', 'Past Events')
@@ -100,7 +100,7 @@ block content
                 |Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
         .gallery-section__bottom
             include ../common/gallery
-    .contacts-section
+    .contacts-section#contacts
         .contacts-section__background
             include ../common/map 
             .contacts-section__layer-label.hide.tablet-hide(data-role="address-swithcher")
