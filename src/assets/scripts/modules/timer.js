@@ -1,9 +1,11 @@
 $(function () {
     var element = $('[data-role="timer"]');
     element.click(function(){
-        var current_date = $(this).attr('data-final');
+        var finalYear = $(this).attr('data-final-year');
+        var finalMonth = $(this).attr('data-final-month');
+        var finalDay = $(this).attr('data-final-day');
 
-        var target_date = new Date(current_date).getTime(); // установить дату обратного отсчета
+        var target_date = new Date(finalYear, finalMonth, finalDay).getTime(); // установить дату обратного отсчета
         var days, hours, minutes, seconds; // переменные для единиц времени
         
         var daysView = $(this).find('[data-days]');
@@ -20,8 +22,10 @@ $(function () {
             var current_date = new Date().getTime();
             var seconds_left = (target_date - current_date) / 1000;
         
-            days = pad( parseInt(seconds_left / 86400) );
+            days = pad( parseInt(+seconds_left / 86400) );
             seconds_left = seconds_left % 86400;
+
+            console.log(+target_date);
                 
             hours = pad( parseInt(seconds_left / 3600) );
             seconds_left = seconds_left % 3600;

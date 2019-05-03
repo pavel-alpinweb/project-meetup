@@ -1,5 +1,5 @@
-mixin timer(final)
-    .timer(data-role="timer", data-final=`${final}`)
+mixin timer(year, month, day)
+    .timer(data-role="timer", data-final-year=`${year}`, data-final-month=`${month}`, data-final-day=`${day}`)
         .timer__item
             .timer__container
                 .timer__count(data-days)
