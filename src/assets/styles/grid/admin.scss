@@ -1,0 +1,29 @@
+.admin__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-top: 5px;
+}
+
+.admin__title{
+    padding: 20px 0;
+    background-color: $mainBgColor;
+    width: 100%;
+}
+
+.admin__item{
+    background: #fff;
+    background-color: $mainBgColor;
+    min-height: 30vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    &:nth-of-type(5){
+        grid-column: span 2;
+    }
+    &:nth-of-type(7){
+        grid-column: span 2;
+    }
+}
