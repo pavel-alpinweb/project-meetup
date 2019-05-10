@@ -1,5 +1,6 @@
 extends ../admin.layout.pug
 include ../common/title
+include ../common/one-field-form
 
 block content
     .admin
@@ -7,9 +8,11 @@ block content
             +title('title--center title--light', 'Страница администратора')
         .admin__grid
             .admin__item
+                +one-field-form('Фото главного экрана', 'text', 'Значение, которое будет в переменной')
             .admin__item
+                +one-field-form('Дата для таймера', 'date', '12,12,12')
             .admin__item
-            .admin__item
+                +one-field-form('Email для заявок', 'email', 'example@example.ex')
             .admin__item
             .admin__item
             .admin__item
