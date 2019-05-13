@@ -1,0 +1,12 @@
+include ../common/big-button
+
+mixin text-form(name, title, value)
+    form.text-form.form(action="/")
+        .form__item
+            .form__title= name
+        .form__item
+            input.form-2__input(type="text" placeholder=`${title}`, value=`${title}` )
+        .form__item
+            | <textarea class="form-2__textarea" placeholder="value">#{value}</textarea>
+        .form__item
+            +big-button('', 'Сохранить')
