@@ -1,2 +1,2 @@
-mixin big-button(mod, value)
-    button(class=`big-button ${mod}`)= value
+mixin big-button(mod, value, dataRole)
+    button(class=`big-button ${mod}`, data-role=`${dataRole}`)= value
