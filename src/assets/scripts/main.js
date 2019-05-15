@@ -6,3 +6,4 @@ import "./modules/gallery";
 import "./modules/switch-content";
 import "./modules/menu";
 import "./modules/events-form";
+import "./modules/speakers-form";

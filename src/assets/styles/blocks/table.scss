@@ -22,8 +22,18 @@
     }
 }
 
+.table__row--auto-height{
+    height: auto;
+    align-items: flex-start;
+    padding: 10px;
+}
+
 .table__row--header{
     background-color: rgb(163, 204, 64);
+}
+
+.table__row--header-large{
+    padding: 10px;
 }
 
 .table__plus-icon{
@@ -45,6 +55,14 @@
         white-space: normal;
         text-align: center;
     }
+}
+
+.table__cell-middle{
+    width: 21%;
+}
+
+.table__cell-mini{
+    width: 11%;
 }
 
 .table__cell-title{

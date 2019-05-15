@@ -1,0 +1,46 @@
+include ../common/big-button
+include ../common/mixins
+
+form.speakers-form(action="/")
+    .table(data-role="speakers-form")
+        .table__header.mobile-hide
+            .table__row.table__row--header.table__row--header-large
+                .table__cell-title.table__cell-middle Имя
+                .table__cell-title.table__cell-middle Описание
+                .table__cell-title.table__cell-middle Фото
+                .table__cell-title.table__cell-middle Соц.сети
+                .table__cell-title.table__cell-mini 
+        .table__body(data-role="speakers-form-body")
+            .table__row.table__row--auto-height(data-role="speakers-form-row")
+                .table__cell-content.table__cell-middle 
+                    input.form-2__input(type="text", placeholder="Имя", value="Павел")
+                .table__cell-content.table__cell-middle 
+                    input.form-2__input(type="text", placeholder="Описание", value="Короткое описание спикера")
+                .table__cell-content.table__cell-middle 
+                    input.form-2__input(type="file", placeholder="Фото спикера")
+                .table__cell-content.table__cell-middle 
+                    .speaker-form__social
+                        input.speaker-form__social-checkbox(type="checkbox", id="facebook-checkbox")
+                        label.speaker-form__social-label(for="facebook-checkbox")
+                            +icon("facebook-icon", "social-list__icon social-list__icon--facebook")
+                        input.form-2__input(type="text", placeholder="Адрес", value="facebook.com")
+                    .speaker-form__social
+                        input.speaker-form__social-checkbox(type="checkbox", id="twitter-checkbox")
+                        label.speaker-form__social-label(for="twitter-checkbox")
+                            +icon("twitter-icon", "social-list__icon social-list__icon--twitter")
+                        input.form-2__input(type="text", placeholder="Адрес", value="twitter.com")
+                    .speaker-form__social
+                        input.speaker-form__social-checkbox(type="checkbox", id="behance-checkbox")
+                        label.speaker-form__social-label(for="behance-checkbox")
+                            +icon("behance-icon", "social-list__icon social-list__icon--behance")
+                        input.form-2__input(type="text", placeholder="Адрес", value="behance.com")
+                    .speaker-form__social
+                        input.speaker-form__social-checkbox(type="checkbox", id="linkedin-checkbox")
+                        label.speaker-form__social-label(for="linkedin-checkbox")
+                            +icon("linkedin-icon", "social-list__icon social-list__icon--linkedin")
+                        input.form-2__input(type="text", placeholder="Адрес", value="linkedin.com")
+                .table__cell-content.table__cell-mini 
+                    +big-button('', 'Удалить', 'remove-table-row-speakers')
+    .speakers-form__control
+        +big-button('', 'Сохранить', 'save-table-speakers')
+        +big-button('', 'Добавить', 'add-table-row-speakers')
