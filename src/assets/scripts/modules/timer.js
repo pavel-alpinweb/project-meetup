@@ -5,7 +5,7 @@ $(function () {
         var finalMonth = $(this).attr('data-final-month');
         var finalDay = $(this).attr('data-final-day');
 
-        var target_date = new Date(finalYear, finalMonth, finalDay).getTime(); // установить дату обратного отсчета
+        var target_date = new Date(finalYear, finalMonth-1, finalDay).getTime(); // установить дату обратного отсчета
         var days, hours, minutes, seconds; // переменные для единиц времени
         
         var daysView = $(this).find('[data-days]');
