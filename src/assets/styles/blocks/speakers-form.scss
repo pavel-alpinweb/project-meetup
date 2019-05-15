@@ -2,26 +2,6 @@
     width: 100%;
 }
 
-.speaker-form__social-checkbox{
-    display: none;
-    &:checked + .speaker-form__social-label{
-        .social-list__icon{
-            fill:#ffce13;
-        }
-    }
-}
-
-.speaker-form__social{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.speaker-form__social-label{
-    cursor: pointer;
-    margin-right: 5px;
-}
-
 .speakers-form__control{
     width: 300px;
     display: flex;

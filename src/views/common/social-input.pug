@@ -1,0 +1,7 @@
+include ../common/mixins
+
+mixin social-input(icon, value)
+    .social-input
+        .speaker-form__social-label(for=`${icon}-checkbox`, data-role="soc-flag")
+            +icon(`${icon}-icon`, `social-list__icon social-list__icon--${icon}`)
+        input.form-2__input(type="text", placeholder="Адрес", value=`${value}`, data-role="social-input")

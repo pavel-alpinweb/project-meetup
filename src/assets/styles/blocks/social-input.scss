@@ -1,0 +1,17 @@
+.social-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &.is-active{
+        .speaker-form__social-label{
+            .social-list__icon{
+                fill:#ffce13;
+            }
+        }
+    }
+}
+
+.speaker-form__social-label{
+    cursor: pointer;
+    margin-right: 5px;
+}

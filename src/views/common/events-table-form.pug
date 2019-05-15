@@ -7,8 +7,8 @@ form.events-table-form(action="/")
                 .table__cell-title.table__cell-left Время 
                 .table__cell-title.table__cell-center Событие
                 .table__cell-title.table__cell-right
-        .table__body(data-role="events-form-body")
-            .table__row(data-role="events-form-row")
+        .table__body(data-role="form-body")
+            .table__row(data-role="form-row")
                 .table__cell-title.table__cell-left.tablet-hide.laptop-hide.desctop-hide Время
                 .table__cell-content.table__cell-left 
                     input.form-2__input(type="text", placeholder="10am - 12pm", value="10am - 12pm")
@@ -18,5 +18,5 @@ form.events-table-form(action="/")
                 .table__cell-content
                     +big-button('', 'Удалить', 'remove-table-row')
     .events-table-form__control
-        +big-button('', 'Сохранить', 'save-table-speakers')
-        +big-button('', 'Добавить', 'add-table-row')
+        +big-button('', 'Сохранить', 'save-table-events')
+        +big-button('', 'Добавить', 'add-table-row-events')
