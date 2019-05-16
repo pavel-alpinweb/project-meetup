@@ -11,6 +11,12 @@
     }
 }
 
+.social-input--dark{
+    .social-list__icon{
+        fill: $mainBgColor;
+    }
+}
+
 .speaker-form__social-label{
     cursor: pointer;
     margin-right: 5px;

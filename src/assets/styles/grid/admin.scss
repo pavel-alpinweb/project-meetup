@@ -14,10 +14,9 @@
 .admin__item{
     background: #fff;
     background-color: $mainBgColor;
-    min-height: 30vh;
     height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 5px;
     &:nth-of-type(5){
