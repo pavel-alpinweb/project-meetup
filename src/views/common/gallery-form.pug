@@ -1,6 +1,8 @@
 include ../common/big-button
 
 form.gallery-form.form(action="/")
+    .form__item
+        .form__title Галлерея
     .gallery-form__grid
         .gallery-form__image-container
             +icon('More_icon', 'gallery-form__delete')
@@ -35,8 +37,6 @@ form.gallery-form.form(action="/")
         .gallery-form__image-container
             +icon('More_icon', 'gallery-form__delete')
             img(src="assets/content/writer-1421099_1920.jpg", alt="img")
-    .form__item
-        .form__title Галлерея
     .form__item
         input.form__input(type="file" placeholder="Выбыирите изображение" )
     .form__item
