@@ -1,5 +1,6 @@
 .big-button{
     height: 55px;
+    line-height: 55px;
     border-radius: 15px;
     background-color: $accentColor;
     padding: 0 28px;
@@ -8,6 +9,8 @@
     font-size: 18px;
     font-weight: 400;
     transition: all .3s;
+    display: inline-block;
+    text-decoration: none;
     &:hover{
         background-color: #ffce13;
     }

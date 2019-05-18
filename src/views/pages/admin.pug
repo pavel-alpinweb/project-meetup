@@ -11,15 +11,15 @@ block content
             .admin__item
                 +one-field-form('Фото главного экрана', 'file', 'Значение, которое будет в переменной')
             .admin__item
-                +one-field-form('Дата для таймера', 'date', '12,12,12')
+                +one-field-form('Дата для таймера', 'text', `${header.timerYear}, ${header.timersMounth}, ${header.timerDays}`)
             .admin__item
-                +one-field-form('Email для заявок', 'email', 'example@example.ex')
+                +one-field-form('Email для заявок', 'email', header.emailForRegistration)
             .admin__item
-                +text-form('Привествиенный текст', 'Welcome!', 'The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...')
+                +text-form('Приветственный текст', welcomeText.title, welcomeText.text)
             .admin__item
                 include ../common/events-table-form
             .admin__item
-                +text-form('Промо текст', 'We reward the Elites!', 'Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.', '/uikit.html')
+                +text-form('Промо текст', promoText.title, promoText.text, promoText.link)
             .admin__item
                 include ../common/gallery-form
             .admin__item

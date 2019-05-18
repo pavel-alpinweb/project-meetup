@@ -11,7 +11,7 @@ html(lang="ru")
     title #{title}
     link(rel='stylesheet' href='assets/styles/main.min.css')
   body
-    header.page-header(style="background-image:url(assets/content/workplace-1245776_1920.jpg);")
+    header.page-header(style=`background-image:url(${header.mainBackgorund});`)
       .page-header__content
         .page-header__wrapper
           .page-header-top
@@ -22,7 +22,7 @@ html(lang="ru")
               include ./common/btn-menu
           .page-header__center
             include ./common/timer
-            +timer(2019, 7, 1)
+            +timer(header.timerYear, header.timersMounth, header.timerDays)
     main.maincontent
       block content
     
