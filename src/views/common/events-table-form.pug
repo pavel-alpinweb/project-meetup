@@ -1,22 +1,24 @@
 include ../common/big-button
 
-form.events-table-form(action="/")
-    .table(data-role="events-form")
-        .table__header.mobile-hide
-            .table__row.table__row--header
-                .table__cell-title.table__cell-left Время 
-                .table__cell-title.table__cell-center Событие
-                .table__cell-title.table__cell-right
-        .table__body(data-role="form-body")
-            .table__row(data-role="form-row")
-                .table__cell-title.table__cell-left.tablet-hide.laptop-hide.desctop-hide Время
-                .table__cell-content.table__cell-left 
-                    input.form-2__input(type="text", placeholder="10am - 12pm", value="10am - 12pm")
-                .table__cell-title.table__cell-center.tablet-hide.laptop-hide.desctop-hide Событие
-                .table__cell-content.table__cell-center 
-                    input.form-2__input(type="text", placeholder="Sessions by honorable guests and Speakers", value="Sessions by honorable guests and Speakers")
-                .table__cell-content
-                    +big-button('', 'Удалить', 'remove-table-row')
-    .events-table-form__control
-        +big-button('', 'Сохранить', 'save-table-events')
-        +big-button('', 'Добавить', 'add-table-row-events')
+mixin events-table-form(array)
+    form.events-table-form(action="/")
+        .table(data-role="events-form")
+            .table__header.mobile-hide
+                .table__row.table__row--header
+                    .table__cell-title.table__cell-left Время 
+                    .table__cell-title.table__cell-center Событие
+                    .table__cell-title.table__cell-right
+            .table__body(data-role="form-body")
+                each event in array
+                    .table__row(data-role="form-row")
+                        .table__cell-title.table__cell-left.tablet-hide.laptop-hide.desctop-hide Время
+                        .table__cell-content.table__cell-left 
+                            input.form-2__input(type="text", placeholder=`${event.time}`, value=`${event.time}`)
+                        .table__cell-title.table__cell-center.tablet-hide.laptop-hide.desctop-hide Событие
+                        .table__cell-content.table__cell-center 
+                            input.form-2__input(type="text", placeholder=`${event.name}`, value=`${event.name}`)
+                        .table__cell-content
+                            +big-button('', 'Удалить', 'remove-table-row')
+        .events-table-form__control
+            +big-button('', 'Сохранить', 'save-table-events')
+            +big-button('', 'Добавить', 'add-table-row-events')
