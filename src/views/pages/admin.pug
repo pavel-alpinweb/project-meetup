@@ -2,6 +2,7 @@ extends ../admin.layout.pug
 include ../common/title
 include ../common/one-field-form
 include ../common/text-form
+include ../common/gallery-form
 
 block content
     .admin
@@ -21,7 +22,7 @@ block content
             .admin__item
                 +text-form('Промо текст', promoText.title, promoText.text, promoText.link)
             .admin__item
-                include ../common/gallery-form
+                +gallery-form(gallery)
             .admin__item
                 include ../common/contacts-admin-form
             .admin__item

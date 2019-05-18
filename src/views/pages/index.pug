@@ -2,6 +2,7 @@ extends ../main.layout.pug
 include ../common/speakers
 include ../common/title
 include ../common/big-button
+include ../common/gallery
 
 block content
     .description#description
@@ -88,7 +89,7 @@ block content
                 include ../common/text
                 |Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
         .gallery-section__bottom
-            include ../common/gallery
+            +gallery(gallery)
     .contacts-section#contacts
         .contacts-section__background
             include ../common/map 

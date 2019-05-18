@@ -9,12 +9,19 @@
 }
 
 .gallery-form__delete{
-    position: absolute;
-    top:10px;
-    left: 10px;
     width: 35px;
     height: 35px;
     fill: red;
     transform: rotate(45deg);
     cursor: pointer;
+    transition:all .3s;
+    &:hover{
+        fill: #ffce13;
+    }
+}
+
+.gallery-form__button{
+    position: absolute;
+    top:10px;
+    left: 10px;
 }
