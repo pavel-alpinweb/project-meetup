@@ -4,6 +4,7 @@ include ../common/one-field-form
 include ../common/text-form
 include ../common/gallery-form
 include ../common/events-table-form
+include ../common/contacts-admin-form
 
 block content
     .admin
@@ -25,6 +26,6 @@ block content
             .admin__item
                 +gallery-form(gallery)
             .admin__item
-                include ../common/contacts-admin-form
+                +contacts-admin-form(contacts)
             .admin__item
                 include ../common/speakers-form

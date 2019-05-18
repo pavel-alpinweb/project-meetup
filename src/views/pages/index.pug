@@ -4,6 +4,7 @@ include ../common/title
 include ../common/big-button
 include ../common/gallery
 include ../common/table
+include ../common/address
 
 block content
     .description#description
@@ -12,10 +13,10 @@ block content
                 .description__top-left
                     +title('', welcomeText.title)
                 include ../common/text 
-                    div 
-                        !=welcomeText.text
+                    !=welcomeText.text
             .description__right
                 include ../common/form
+    
     .feauters
         .feauters__item
             +speakers('speakers__icon--community', 'Community', 'Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation and topics. We will have loads of fun.')
@@ -29,6 +30,7 @@ block content
         .table-section__bottom
             include ../common/text
                 |Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)
+    
     .reward-section
         .reward-section__wrapper
             .reward-section__top
@@ -41,6 +43,7 @@ block content
                 a(href=`${promoText.link}`, target="blank").big-button Bring to swag
             .reward-section__left-top.mobile-hide
                 include ../common/envato-elite
+    
     .speakers-section#speakers
         .speakers-section__wrapper
             .speakers-section__top
@@ -69,6 +72,7 @@ block content
                      include ../common/teammate
                 .speakers-section__border-grid  
                      include ../common/teammate
+    
     .sponsor-section#sponsor
         .sponsor-section__wrapper
            .sponsor-section__top 
@@ -81,6 +85,7 @@ block content
                 include ../common/sponsors
            .sponsor-section__bottom 
                 +big-button('', 'Sponsor Us')
+    
     .gallery-section#gallery
         .gallery-section__top
             .gallery-section__top-top
@@ -91,17 +96,20 @@ block content
                 |Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
         .gallery-section__bottom
             +gallery(gallery)
+    
     .contacts-section#contacts
         .contacts-section__background
             include ../common/map 
+                !=contacts.map
             .contacts-section__layer-label.hide.tablet-hide(data-role="address-swithcher")
                 +big-button('big-button--black', 'View address')
         .contacts-section__content(data-role="switch-content")
             .contacts-section__wrapper
                 .contacts-section__left
-                    include ../common/address
+                    +address(contacts.address)
                 .contacts-section__right
                     include ../common/form-2
+    
     .page-footer
         .page-footer__wrapper
             .page-footer__center

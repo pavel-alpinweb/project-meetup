@@ -1,19 +1,21 @@
 include ../common/big-button
 include ../common/social-input
 
--var icons = ['facebook', 'twitter', 'behance', 'linkedin', 'dribbble', 'google-plus', 'tumblr'];
 
-form.form.contacts-admin-form(action="/", method="post")
-    .form__item
-        .form__title Контакты
-    .form__item
-        input.form__input(type="email" placeholder="Email для заявок")
-    .form__item
-        input.form__input(type="text" placeholder="Адрес")
-    .form__item
-        input.form__input(type="text" placeholder="Код карты")
-    .form__item.form__item--last
-        each item in icons
-            +social-input(item, 'vk.com', 'social-input--dark')
-    .form__item
-        +big-button('', 'Сохранить', 'save-contacts')
+
+mixin contacts-admin-form(object)
+    -var icons = ['facebook', 'twitter', 'behance', 'linkedin', 'dribbble', 'google-plus', 'tumblr'];
+    form.form.contacts-admin-form(action="/", method="post")
+        .form__item
+            .form__title Контакты
+        .form__item
+            input.form__input(type="email", placeholder="Email для сообщений", value=`${contacts.email}`)
+        .form__item
+            input.form__input(type="text", placeholder="Адрес", value=`${contacts.address}`)
+        .form__item
+            input.form__input(type="text", placeholder="Код карты", value=`${contacts.map}`)
+        .form__item.form__item--last
+            each item in icons
+                +social-input(item, 'vk.com', 'social-input--dark')
+        .form__item
+            +big-button('', 'Сохранить', 'save-contacts')
