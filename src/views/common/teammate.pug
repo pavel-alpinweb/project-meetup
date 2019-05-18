@@ -1,7 +1,8 @@
-.teammate(style="background-image: url(assets/content/face-2936245_1920.jpg)")
-    .teammate__content
-        .teammate__title Shahriyer Shuvo
-        .teammate__text More about selling in the Envato Marketplaces
-        .teammate__social-list
-            include ./social-list
-            +social-list(['facebook', 'twitter', 'behance', 'dribbble'], '')
+mixin teammate(object)
+    .teammate(style=`background-image: url(${object.photo});`)
+        .teammate__content
+            .teammate__title #{object.name}
+            .teammate__text #{object.description}
+            .teammate__social-list
+                include ./social-list
+                +social-list(object.social, '')

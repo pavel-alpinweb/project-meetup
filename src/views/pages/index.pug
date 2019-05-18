@@ -5,6 +5,7 @@ include ../common/big-button
 include ../common/gallery
 include ../common/table
 include ../common/address
+include ../common/teammate
 
 block content
     .description#description
@@ -56,23 +57,9 @@ block content
             .speakers-section__grid
                 .speakers-section__center-grid.tablet-hide.mobile-hide
                      include ../common/teammate-bage
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid 
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-                .speakers-section__border-grid  
-                     include ../common/teammate
-    
+                each speaker in speakers 
+                    .speakers-section__border-grid  
+                            +teammate(speaker)
     .sponsor-section#sponsor
         .sponsor-section__wrapper
            .sponsor-section__top 

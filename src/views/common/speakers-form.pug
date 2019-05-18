@@ -2,32 +2,32 @@ include ../common/big-button
 include ../common/mixins
 include ../common/social-input
 
--var icons = ['facebook', 'twitter', 'behance', 'linkedin'];
-
-form.speakers-form(action="/")
-    .table(data-role="speakers-form")
-        .table__header.mobile-hide
-            .table__row.table__row--header.table__row--header-large
-                .table__cell-title.table__cell-middle Имя
-                .table__cell-title.table__cell-middle Описание
-                .table__cell-title.table__cell-middle Фото
-                .table__cell-title.table__cell-middle Соц.сети
-                .table__cell-title.table__cell-mini 
-        .table__body(data-role="form-body")
-            .table__row.table__row--auto-height(data-role="form-row")
-                .table__cell-content.table__cell-middle 
-                    input.form-2__input(type="text", placeholder="Имя", value="Павел")
-                .table__cell-content.table__cell-middle 
-                    input.form-2__input(type="text", placeholder="Описание", value="Короткое описание спикера")
-                .table__cell-content.table__cell-middle 
-                    .speakers-form__image
-                        img(src="assets/content/man-2037255_1920.jpg", alt="img")
-                    input.form-2__input(type="file", placeholder="Фото спикера")
-                .table__cell-content.table__cell-middle 
-                    each item in icons
-                        +social-input(item, 'vk.com')
-                .table__cell-content.table__cell-mini 
-                    +big-button('', 'Удалить', 'remove-table-row')
-    .speakers-form__control
-        +big-button('', 'Сохранить', 'save-table-speakers')
-        +big-button('', 'Добавить', 'add-table-row-speakers')
+mixin speakers-form(array)
+    form.speakers-form(action="/")
+        .table(data-role="speakers-form")
+            .table__header.mobile-hide
+                .table__row.table__row--header.table__row--header-large
+                    .table__cell-title.table__cell-middle Имя
+                    .table__cell-title.table__cell-middle Описание
+                    .table__cell-title.table__cell-middle Фото
+                    .table__cell-title.table__cell-middle Соц.сети
+                    .table__cell-title.table__cell-mini 
+            .table__body(data-role="form-body")
+                each speaker in array
+                    .table__row.table__row--auto-height(data-role="form-row")
+                        .table__cell-content.table__cell-middle 
+                            input.form-2__input(type="text", placeholder="Имя", value=`${speaker.name}`)
+                        .table__cell-content.table__cell-middle 
+                            input.form-2__input(type="text", placeholder="Описание", value=`${speaker.description}`)
+                        .table__cell-content.table__cell-middle 
+                            .speakers-form__image
+                                img(src=`${speaker.photo}`, alt="img")
+                            input.form-2__input(type="file", placeholder="Фото спикера")
+                        .table__cell-content.table__cell-middle 
+                            each item in speaker.social
+                                +social-input(item.name, item.link, item.empty, '')
+                        .table__cell-content.table__cell-mini 
+                            +big-button('', 'Удалить', 'remove-table-row')
+        .speakers-form__control
+            +big-button('', 'Сохранить', 'save-table-speakers')
+            +big-button('', 'Добавить', 'add-table-row-speakers')

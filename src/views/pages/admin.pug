@@ -5,6 +5,7 @@ include ../common/text-form
 include ../common/gallery-form
 include ../common/events-table-form
 include ../common/contacts-admin-form
+include ../common/speakers-form
 
 block content
     .admin
@@ -28,4 +29,6 @@ block content
             .admin__item
                 +contacts-admin-form(contacts)
             .admin__item
-                include ../common/speakers-form
+                +speakers-form(speakers)
+
+                
