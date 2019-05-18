@@ -1,10 +1,7 @@
 include ../common/big-button
 include ../common/social-input
 
-
-
 mixin contacts-admin-form(object)
-    -var icons = ['facebook', 'twitter', 'behance', 'linkedin', 'dribbble', 'google-plus', 'tumblr'];
     form.form.contacts-admin-form(action="/", method="post")
         .form__item
             .form__title Контакты
@@ -15,7 +12,7 @@ mixin contacts-admin-form(object)
         .form__item
             input.form__input(type="text", placeholder="Код карты", value=`${contacts.map}`)
         .form__item.form__item--last
-            each item in icons
-                +social-input(item, 'vk.com', 'social-input--dark')
+            each item in contacts.social
+                +social-input(item.name, item.link, item.empty, 'social-input--dark')
         .form__item
             +big-button('', 'Сохранить', 'save-contacts')

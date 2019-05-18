@@ -1,6 +1,7 @@
-mixin social-list(icons, mod)
+mixin social-list(array, mod)
     ul(class=`social-list ${mod}`)
-        each item in icons
-            li.social-list__item
-                a.social-list__link(href="/")
-                    +icon(`${item}-icon`, `social-list__icon social-list__icon--${item}`)
+        each item in array
+            if !item.empty
+                li.social-list__item
+                    a.social-list__link(href=`${item.link}`)
+                        +icon(`${item.name}-icon`, `social-list__icon social-list__icon--${item.name}`)
