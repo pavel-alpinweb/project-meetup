@@ -13,10 +13,10 @@ mixin events-table-form(array)
                     .table__row(data-role="form-row")
                         .table__cell-title.table__cell-left.tablet-hide.laptop-hide.desctop-hide Время
                         .table__cell-content.table__cell-left 
-                            input.form-2__input(type="text", placeholder=`${event.time}`, value=`${event.time}`)
+                            input.form-2__input(type="text", placeholder=`${event.time}`, value=`${event.time}`, data-input="event-time")
                         .table__cell-title.table__cell-center.tablet-hide.laptop-hide.desctop-hide Событие
                         .table__cell-content.table__cell-center 
-                            input.form-2__input(type="text", placeholder=`${event.name}`, value=`${event.name}`)
+                            input.form-2__input(type="text", placeholder=`${event.name}`, value=`${event.name}`, data-input="event-name")
                         .table__cell-content
                             +big-button('', 'Удалить', 'remove-table-row')
         .events-table-form__control
