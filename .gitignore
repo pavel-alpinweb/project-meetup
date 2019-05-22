@@ -6,7 +6,7 @@ ehthumbs.db
 Desktop.ini
 
 /node_modules/*
-/build/
+/public/
 /vscode/
 
 # Recycle Bin used on file shares

@@ -17,36 +17,36 @@ const px2rem = require('gulp-px-to-rem');
 const reload = browserSync.reload;
 
 const paths = {
-    root: 'build',
+    root: 'public',
     templates: {
         pages: './src/views/pages/*.pug',
         src: './src/views/**/*.pug',
-        dest: './build/'
+        dest: './public/'
     },
     styles: {
         main: './src/assets/styles/main.scss',
         src: './src/assets/styles/**/*.scss',
-        dest: './build/assets/styles/'
+        dest: './public/assets/styles/'
     },
     scripts: {
         src: './src/assets/scripts/**/*.js',
-        dest: './build/assets/scripts/'
+        dest: './public/assets/scripts/'
     },
     images: {
         src: './src/assets/images/*.*',
-        dest: './build/assets/images/'
+        dest: './public/assets/images/'
     },
     icons: {
         src: './src/assets/images/icons/*.svg',
-        dest: './build/assets/images/icons/'
+        dest: './public/assets/images/icons/'
     },
     fonts: {
         src: './src/assets/fonts/*.*',
-        dest: './build/assets/fonts/'
+        dest: './public/assets/fonts/'
     },
     content: {
       src: './src/assets/content/*.*',
-      dest: './build/assets/content/'
+      dest: './public/assets/content/'
     }
 }
 
