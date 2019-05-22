@@ -8,4 +8,5 @@ import "./modules/menu";
 import "./modules/events-form";
 import "./modules/speakers-form";
 import "./modules/welcome-text";
-import "./modules/promo-text";
+import "./modules/promo-text"; 
+import "./modules/one-field-form"; 

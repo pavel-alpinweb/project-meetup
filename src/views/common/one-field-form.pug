@@ -1,11 +1,11 @@
 include ../common/big-button
 
-mixin one-field-form(name, type, value)
+mixin one-field-form(name, type, value, content)
     form.one-field-form.form(action="/")
         .form__item
             .form__title= name
         .form__item
-            input.form__input(type=`${type}` placeholder=`${name}`, value=`${value}` )
+            input.form__input(type=`${type}` placeholder=`${name}`, value=`${value}`, data-role=`${content}` )
         .form__item
-            +big-button('', 'Сохранить')
+            +big-button('', 'Сохранить', 'save-header')
 

@@ -13,11 +13,11 @@ block content
             +title('title--center title--light', 'Страница администратора')
         .admin__grid
             .admin__item
-                +one-field-form('Фото главного экрана', 'file', 'Значение, которое будет в переменной')
+                +one-field-form('Фото главного экрана', 'file', 'Значение, которое будет в переменной', 'main-bg-input')
             .admin__item
-                +one-field-form('Дата для таймера', 'text', `${header.timerYear}, ${header.timersMounth}, ${header.timerDays}`)
+                +one-field-form('Дата для таймера', 'text', `${header.timerYear}, ${header.timerMounth}, ${header.timerDays}`, 'timer-input')
             .admin__item
-                +one-field-form('Email для заявок', 'email', header.emailForRegistration)
+                +one-field-form('Email для заявок', 'email', header.emailForRegistration, 'email-reg-input')
             .admin__item
                 +text-form('Приветственный текст', welcomeText.title, welcomeText.text, false, 'welcomeText', 'saveWelcomeText')
             .admin__item
