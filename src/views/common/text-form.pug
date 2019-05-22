@@ -1,6 +1,6 @@
 include ../common/big-button
 
-mixin text-form(name, title, value, link, dataRole)
+mixin text-form(name, title, value, link, dataRole, buttonName)
     form.text-form.form(action="/", data-role=`${dataRole}`)
         .form__item
             .form__title= name
@@ -12,4 +12,4 @@ mixin text-form(name, title, value, link, dataRole)
            .form__item
                 input.form-2__input(type="text" placeholder=`${link}`, value=`${link}` , data-input="link")
         .form__item
-            +big-button('', 'Сохранить', 'saveWelcomeText')
+            +big-button('', 'Сохранить', buttonName)
