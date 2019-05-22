@@ -11,6 +11,10 @@ html(lang="ru")
     title #{title}
     link(rel='stylesheet' href='assets/styles/main.min.css')
   body
+    .message.hide(data-role="server message")
+    .preloader(data-role="ajaxPreloader")
+      .preloader__spinner
+        .preloader__animation
     main.maincontent
       block content
     

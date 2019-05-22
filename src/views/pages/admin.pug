@@ -19,7 +19,7 @@ block content
             .admin__item
                 +one-field-form('Email для заявок', 'email', header.emailForRegistration)
             .admin__item
-                +text-form('Приветственный текст', welcomeText.title, welcomeText.text)
+                +text-form('Приветственный текст', welcomeText.title, welcomeText.text, false, 'welcomeText')
             .admin__item
                 +events-table-form(events)
             .admin__item

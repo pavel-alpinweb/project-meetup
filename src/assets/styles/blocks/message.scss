@@ -1,0 +1,18 @@
+.message{
+    position: fixed;
+    top:20px;
+    right: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #44C21A;
+    border-radius:15px;
+    box-shadow: 0 0 15px 5px #ffce13;
+    font-size: 18px;
+    color: #fff;
+    font-family: $mainFont;
+    &.m-fail{
+        background-color: red;
+        box-shadow: 0 0 15px 5px #000;
+    }
+}
+

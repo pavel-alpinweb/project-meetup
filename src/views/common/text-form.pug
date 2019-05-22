@@ -1,15 +1,15 @@
 include ../common/big-button
 
-mixin text-form(name, title, value, link)
-    form.text-form.form(action="/")
+mixin text-form(name, title, value, link, dataRole)
+    form.text-form.form(action="/", data-role=`${dataRole}`)
         .form__item
             .form__title= name
         .form__item
-            input.form-2__input(type="text" placeholder=`${title}`, value=`${title}` )
+            input.form-2__input(type="text" placeholder=`${title}`, value=`${title}`, data-input="title" )
         .form__item
-            | <textarea class="form-2__textarea" placeholder="value">#{value}</textarea>
+            | <textarea class="form-2__textarea" placeholder="value" data-input="text">#{value}</textarea>
         if link
            .form__item
-                input.form-2__input(type="text" placeholder=`${link}`, value=`${link}` )
+                input.form-2__input(type="text" placeholder=`${link}`, value=`${link}` , data-input="link")
         .form__item
-            +big-button('', 'Сохранить')
+            +big-button('', 'Сохранить', 'saveWelcomeText')
