@@ -2,15 +2,15 @@ include ../common/big-button
 include ../common/social-input
 
 mixin contacts-admin-form(object)
-    form.form.contacts-admin-form(action="/", method="post")
+    form.form.contacts-admin-form(action="/", method="post", data-role="contacts-admin-form")
         .form__item
             .form__title Контакты
         .form__item
-            input.form__input(type="email", placeholder="Email для сообщений", value=`${contacts.email}`)
+            input.form__input(type="email", placeholder="Email для сообщений", value=`${contacts.email}`, data-input="email-post-input")
         .form__item
-            input.form__input(type="text", placeholder="Адрес", value=`${contacts.address}`)
+            input.form__input(type="text", placeholder="Адрес", value=`${contacts.address}`, data-input="address-input")
         .form__item
-            input.form__input(type="text", placeholder="Код карты", value=`${contacts.map}`)
+            input.form__input(type="text", placeholder="Код карты", value=`${contacts.map}`, data-input="map-code-input")
         .form__item.form__item--last
             each item in contacts.social
                 +social-input(item.name, item.link, item.empty, 'social-input--dark')
