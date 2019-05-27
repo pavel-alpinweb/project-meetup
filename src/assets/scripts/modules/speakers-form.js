@@ -1,3 +1,5 @@
+import sendData from './adminAjax';
+
 var tableRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
 
 $('body').on('click', '[data-role="remove-table-row-speakers"]', function (e) {
@@ -21,11 +23,41 @@ $('body').on('focusout', '[data-role="social-input"]', function () {
     }
 });
 
-$('[data-role="save-table-speakers"]').click(function (e) { 
-    e.preventDefault();
-});
-
 $('[data-role="add-table-row-speakers"]').click(function (e) { 
     e.preventDefault();
     tableRow.clone().appendTo('[data-role="speakers-form"]  [data-role="form-body"]');
+});
+
+$('[data-role="save-table-speakers"]').click(function (e) { 
+    e.preventDefault();
+    var speakersArray = [];
+    var speakers = $('[data-role="speakers-form"] [data-role="form-row"]');
+    speakers.each(function(){
+        var speakerObject = {};
+
+        speakerObject.name = $(this).find('[data-input="name"]').val();
+        speakerObject.description = $(this).find('[data-input="description"]').val();
+        speakerObject.photo = $(this).find('[data-input="photo"]').val();
+
+        
+        var speakersSocialList = [];
+        var speakerSocialElement = $(this).find('[data-role="social-input"]');
+        speakerSocialElement.each(function(){
+            var socialObject = {};
+            socialObject.name = $(this).attr('data-name');
+            socialObject.link = $(this).val();
+            if($(this).parents('[data-role="social-input-container"]').hasClass('is-active')){
+                socialObject.empty = false;
+            } else {
+                socialObject.empty = true;
+            }
+            speakersSocialList.push(socialObject);
+        });
+
+        speakerObject.social = speakersSocialList;
+
+        speakersArray.push(speakerObject);
+    });
+    console.log(speakersArray);
+    sendData("/saveWelcomeText", speakersArray, "Список спикеров обновлен!");
 });
