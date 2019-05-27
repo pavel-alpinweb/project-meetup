@@ -7,7 +7,12 @@ $('[data-role="timer-input"]').mask("9999, 99, 99",{placeholder:" "});
 $('[data-role="save-header"]').click(function (e) { 
     e.preventDefault();
 
-    var timerData = $('[data-role="timer-input"]').val();
+    var timerData;
+    if($('[data-role="timer-input"]').val() == ''){
+        timerData = $('[data-role="timer-input"]').attr('placeholder');
+    } else {
+        timerData = $('[data-role="timer-input"]').val();
+    }
     var timerArray = timerData.split(', ');
 
     headerSettings.mainBackgorund = $('[data-role="main-bg-input"]').val();
