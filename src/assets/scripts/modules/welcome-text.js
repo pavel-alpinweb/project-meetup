@@ -1,13 +1,8 @@
 import sendData from './adminAjax';
-
-var newText = {};
-var welcomeTextForm = $('[data-role="welcomeText"]');
+import editText from './edit-text';
 
 $('[data-role="saveWelcomeText"]').click(function (e) { 
     e.preventDefault();
-    newText.title = welcomeTextForm.find('[data-input="title"]').val();
-    newText.text = welcomeTextForm.find('[data-input="text"]').val();
-    console.log(newText); 
-
+    var newText = editText('[data-role="welcomeText"]');
     sendData("/saveWelcomeText", newText, "Приветственный текст обновлен!");
 });
