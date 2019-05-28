@@ -6,6 +6,7 @@ include ../common/gallery-form
 include ../common/events-table-form
 include ../common/contacts-admin-form
 include ../common/speakers-form
+include ../common/file-form
 
 block content
     .admin
@@ -13,7 +14,7 @@ block content
             +title('title--center title--light', 'Страница администратора')
         .admin__grid
             .admin__item
-                +one-field-form('Фото главного экрана', 'file', 'Значение, которое будет в переменной', 'main-bg-input', 'Выбирите файл')
+                +file-form()
             .admin__item
                 +one-field-form('Дата для таймера', 'text', `${header.timerYear}, ${header.timerMounth}, ${header.timerDays}`, 'timer-input', `${header.timerYear}, ${header.timerMounth}, ${header.timerDays}`)
             .admin__item

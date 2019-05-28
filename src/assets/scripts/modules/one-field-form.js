@@ -15,7 +15,6 @@ $('[data-role="save-header"]').click(function (e) {
     }
     var timerArray = timerData.split(', ');
 
-    headerSettings.mainBackgorund = $('[data-role="main-bg-input"]').val();
     headerSettings.timerYear = +timerArray[0];
     headerSettings.timerMounth = +timerArray[1];
     headerSettings.timerDays = +timerArray[2];

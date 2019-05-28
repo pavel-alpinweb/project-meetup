@@ -1,0 +1,10 @@
+include ../common/big-button
+
+mixin file-form()
+    form.one-field-form.form(action="/")
+        .form__item
+            .form__title Изображение главного экрана
+        .form__item
+            input.form__input(type="file" data-role="file-input" )
+        .form__item
+            +big-button('', 'Сохранить', 'upload-file')

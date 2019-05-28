@@ -5,3 +5,4 @@ import "./modules/welcome-text";
 import "./modules/promo-text";
 import "./modules/one-field-form"; 
 import "./modules/contacts-admin-form";
+import "./modules/file-form";
