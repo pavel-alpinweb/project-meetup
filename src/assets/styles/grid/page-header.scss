@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
     &:after{
         content: '';
         display: block;
