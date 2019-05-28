@@ -1,3 +1,3 @@
 module.exports.get = function(req, res) {
-  res.render("pages/index");
+  res.render("pages/admin");
 };
