@@ -79,38 +79,38 @@
     "social": [
       {
         "name": "facebook",
-        "empty": false,
-        "link": "facebook.com"
+        "link": "facebook.com",
+        "empty": "false"
       },
       {
         "name": "twitter",
-        "empty": false,
-        "link": "twitter.com"
+        "link": "twitter.com",
+        "empty": "false"
       },
       {
         "name": "behance",
-        "empty": false,
-        "link": "behance.com"
+        "link": "behance.com",
+        "empty": "false"
       },
       {
         "name": "linkedin",
-        "empty": false,
-        "link": "linkedin.com"
+        "link": "linkedin.com",
+        "empty": "false"
       },
       {
         "name": "dribbble",
-        "empty": false,
-        "link": "dribbble.com"
+        "link": "dribbble.com",
+        "empty": "false"
       },
       {
         "name": "google-plus",
-        "empty": true,
-        "link": "google-plus.com"
+        "link": "google-plus.com",
+        "empty": "false"
       },
       {
         "name": "tumblr",
-        "empty": true,
-        "link": ""
+        "link": "",
+        "empty": "true"
       }
     ]
   },
@@ -122,22 +122,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": false,
+          "empty": "false",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": true,
+          "empty": "true",
           "link": "linkedin.com"
         }
       ]
@@ -149,22 +149,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": true,
+          "empty": "true",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]
@@ -176,22 +176,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": false,
+          "empty": "false",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]
@@ -203,22 +203,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": true,
+          "empty": "true",
           "link": ""
         },
         {
           "name": "behance",
-          "empty": true,
+          "empty": "true",
           "link": ""
         },
         {
           "name": "linkedin",
-          "empty": true,
+          "empty": "true",
           "link": ""
         }
       ]
@@ -230,22 +230,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": false,
+          "empty": "false",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]
@@ -257,22 +257,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": false,
+          "empty": "false",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]
@@ -284,22 +284,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": true,
+          "empty": "true",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": true,
+          "empty": "true",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]
@@ -311,22 +311,22 @@
       "social": [
         {
           "name": "facebook",
-          "empty": false,
+          "empty": "false",
           "link": "facebook.com"
         },
         {
           "name": "twitter",
-          "empty": false,
+          "empty": "false",
           "link": "twitter.com"
         },
         {
           "name": "behance",
-          "empty": false,
+          "empty": "false",
           "link": "behance.com"
         },
         {
           "name": "linkedin",
-          "empty": false,
+          "empty": "false",
           "link": "linkedin.com"
         }
       ]

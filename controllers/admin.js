@@ -33,6 +33,7 @@ module.exports.promoText = function(req, res){
 
 module.exports.contacts = function(req, res){
   db.set("contacts", req.body).write();
+  console.log(req.body);
   res.send("Контакты обновленны!");
 };
 

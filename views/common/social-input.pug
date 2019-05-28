@@ -1,7 +1,7 @@
 include ../common/mixins
 
 mixin social-input(icon, value, empty, mod)
-    div(class=`social-input ${mod} ${!empty ? 'is-active': ''}`, data-role="social-input-container")
+    div(class=`social-input ${mod} ${empty != "true" ? 'is-active': ''}`, data-role="social-input-container")
         .speaker-form__social-label(for=`${icon}-checkbox`, data-role="soc-flag")
             +icon(`${icon}-icon`, `social-list__icon social-list__icon--${icon}`)
         input.form-2__input(type="text", placeholder="Ссылка", value=`${value}`, data-role="social-input", data-name=`${icon}`)

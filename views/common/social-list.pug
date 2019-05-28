@@ -1,7 +1,7 @@
 mixin social-list(array, mod)
     ul(class=`social-list ${mod}`)
         each item in array
-            if !item.empty
+            if item.empty != "true"
                 li.social-list__item
                     a.social-list__link(href=`${item.link}`)
                         +icon(`${item.name}-icon`, `social-list__icon social-list__icon--${item.name}`)
