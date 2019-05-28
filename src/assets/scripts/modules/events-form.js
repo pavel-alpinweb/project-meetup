@@ -31,6 +31,6 @@ $('[data-role="save-table-events"]').click(function (e) {
             $('[data-role="server message"]').addClass('hide');
         }, 3000);
     } else {
-        sendData("/events", eventsArray, "Расписание событий обновленно!");
+        sendData("/events", eventsArray);
     } 
 });

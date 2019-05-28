@@ -21,5 +21,5 @@ $('[data-role="save-header"]').click(function (e) {
     headerSettings.emailForRegistration = $('[data-role="email-reg-input"]').val();
 
     console.log(headerSettings);
-    sendData("/headerSettings", headerSettings, "Настройки главного экрана обновленны!");
+    sendData("/headerSettings", headerSettings);
 });

@@ -59,5 +59,5 @@ $('[data-role="save-table-speakers"]').click(function (e) {
         speakersArray.push(speakerObject);
     });
     console.log(speakersArray);
-    sendData("/speakersList", speakersArray, "Список спикеров обновлен!");
+    sendData("/speakersList", speakersArray);
 });

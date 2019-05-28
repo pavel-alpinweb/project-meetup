@@ -25,3 +25,13 @@ module.exports.welcomeText = function(req, res){
   db.set("welcomeText", req.body).write();
   res.send("Приветственный текст обновлен!");
 };
+
+module.exports.promoText = function(req, res){
+  db.set("promoText", req.body).write();
+  res.send("Промо текст обновлен!");
+};
+
+module.exports.contacts = function(req, res){
+  db.set("contacts", req.body).write();
+  res.send("Контакты обновленны!");
+};
