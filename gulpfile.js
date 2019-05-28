@@ -16,7 +16,7 @@ const px2rem = require('gulp-px-to-rem');
 const reload = browserSync.reload;
 
 const paths = {
-    root: 'public',
+    root: 'public/assets',
     styles: {
         main: './src/assets/styles/main.scss',
         src: './src/assets/styles/**/*.scss',
