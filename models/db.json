@@ -1,9 +1,9 @@
 {
   "header": {
-    "timerYear": 2019,
-    "timerMounth": 7,
-    "timerDays": 2,
-    "emailForRegistration": "pavel.alpinweb@yandex.ru"
+    "timerYear": "2019",
+    "timerMounth": "7",
+    "timerDays": "3",
+    "emailForRegistration": "pavel.alpinweb@gmail.com"
   },
   "mainBackgorund": "content/workplace-1245776_1920.jpg",
   "welcomeText": {

@@ -40,3 +40,8 @@ module.exports.events = function(req, res){
   db.set("events", req.body).write();
   res.send("Список событий обновлен!");
 };
+
+module.exports.headerSettings = function(req, res){
+  db.set("header", req.body).write();
+  res.send("Настройки главного экрана обновленны!");
+};

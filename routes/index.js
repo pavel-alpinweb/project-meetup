@@ -10,5 +10,6 @@ router.post("/welcomeText", ctrlAdmin.welcomeText);
 router.post("/promoText", ctrlAdmin.promoText);
 router.post("/contacts", ctrlAdmin.contacts);
 router.post("/events", ctrlAdmin.events);
+router.post("/headerSettings", ctrlAdmin.headerSettings);
 
 module.exports = router;
