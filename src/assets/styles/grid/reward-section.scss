@@ -1,5 +1,6 @@
 .reward-section{
-    background-color: $mainBgColor;
+    background: $mainBgColor url('../images/nagrada.jpg') no-repeat center fixed;
+    background-size: cover;
     padding: 161px 0 193px;
     position: relative;
     &:before{

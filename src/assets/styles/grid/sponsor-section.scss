@@ -1,5 +1,6 @@
 .sponsor-section{
-    background-color: $mainBgColor;
+    background: $mainBgColor url('../images/sponsors.jpg') no-repeat center fixed;
+    background-size: cover;
     position: relative;
     padding: 145px 0;
     &:before{
