@@ -1,8 +1,8 @@
 {
   "header": {
     "timerYear": "2019",
-    "timerMounth": "7",
-    "timerDays": "1",
+    "timerMounth": "6",
+    "timerDays": "19",
     "emailForRegistration": "pavel.alpinweb@gmail.com"
   },
   "mainBackgorund": "content/workplace-1245776_1920.jpg",
@@ -12,8 +12,8 @@
   },
   "promoText": {
     "title": "We reward the Elites!",
-    "text": "<p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p><p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p><p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>",
-    "link": "http://google.com"
+    "text": "<p>\nЭто второй текст, который был выведен из админки.\n</p>\n\n<p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p><p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p><p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>",
+    "link": "http://vk.com"
   },
   "gallery": [
     {
@@ -69,18 +69,14 @@
         "name": "Portfolio Review, Rewards and Ending Presentation"
       },
       {
-        "time": "08pm - 06am",
-        "name": "GREATE PARTY!!!"
-      },
-      {
         "time": "06pm - 12am",
-        "name": "Hangover :)"
+        "name": "Greate party!"
       }
     ]
   },
   "contacts": {
     "email": "pavel.alpinweb@yandex.ru",
-    "address": "Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia",
+    "address": "Kyrgyzstan, Bishkek city, Chatyrkulsky street 29 a",
     "map": "<a class='dg-widget-link' href='http://2gis.kg/bishkek/firm/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap'>Посмотреть на карте Бишкека</a><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/firm/70000001019772265/photos/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos'>Фотографии компании</a></div><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/center/74.593397,42.875199/zoom/16/routeTab/rsType/bus/to/74.593397,42.875199╎Lion, сеть магазинов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route'>Найти проезд до Lion, сеть магазинов</a></div><script charset='utf-8' src='https://widgets.2gis.com/js/DGWidgetLoader.js'></script><script charset='utf-8'>new DGWidgetLoader({'pos':{'lat':42.8757754045956,'lon':74.59339141845705,'zoom':16},'opt':{'city':'bishkek'},'org':[{'id':'70000001019772265'}]});</script><noscript style='color:#c00;font-size:16px;font-weight:bold;'>Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>",
     "social": [
       {
@@ -115,8 +111,8 @@
       },
       {
         "name": "tumblr",
-        "link": "",
-        "empty": "true"
+        "link": "tumbler.com",
+        "empty": "false"
       }
     ]
   },
