@@ -22,7 +22,7 @@ block content
             .admin__item
                 +text-form('Приветственный текст', welcomeText.title, welcomeText.text, false, 'welcomeText', 'saveWelcomeText')
             .admin__item
-                +events-table-form(events)
+                +events-table-form(events.rows)
             .admin__item
                 +text-form('Промо текст', promoText.title, promoText.text, promoText.link, 'promoText', 'savePromoText')
             .admin__item

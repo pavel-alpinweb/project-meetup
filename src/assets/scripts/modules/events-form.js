@@ -2,6 +2,7 @@ import sendData from './adminAjax';
 
 var tableRow = $('[data-role="events-form"] [data-role="form-row"]:last-child');
 var eventsArray = [];
+var eventsRowsArray = {};
 
 $('[data-role="add-table-row-events"]').click(function (e) { 
     e.preventDefault();
@@ -23,7 +24,9 @@ $('[data-role="save-table-events"]').click(function (e) {
         eventsObject.name = $(this).find('[data-input="event-name"]').val();
         eventsArray.push(eventsObject);
     });
-    console.log(eventsArray);
+    console.log(eventsRowsArray);
+
+    eventsRowsArray.rows = eventsArray
 
     if(eventsRows.length == 0){
         $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Необходимо добавить хотябы одно событие!');
@@ -31,6 +34,6 @@ $('[data-role="save-table-events"]').click(function (e) {
             $('[data-role="server message"]').addClass('hide');
         }, 3000);
     } else {
-        sendData("/events", eventsArray);
+        sendData("/events", eventsRowsArray);
     } 
 });

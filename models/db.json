@@ -50,28 +50,34 @@
       "src": "content/workplace-1245776_1920.jpg"
     }
   ],
-  "events": [
-    {
-      "time": "10am - 12pm",
-      "name": "Introduction and presentations about Envato"
-    },
-    {
-      "time": "12pm - 02pm",
-      "name": "Sessions by honorable guests and Speakers"
-    },
-    {
-      "time": "02pm - 03pm",
-      "name": "Introduction and presentations about Envato"
-    },
-    {
-      "time": "03pm - 05pm",
-      "name": "Portfolio Review, Rewards and Ending Presentation"
-    },
-    {
-      "time": "08pm - 06am",
-      "name": "GREATE PARTY!!!"
-    }
-  ],
+  "events": {
+    "rows": [
+      {
+        "time": "10am - 12pm",
+        "name": "Introduction and presentations about Envato"
+      },
+      {
+        "time": "12pm - 02pm",
+        "name": "Sessions by honorable guests and Speakers"
+      },
+      {
+        "time": "02pm - 03pm",
+        "name": "Introduction and presentations about Envato"
+      },
+      {
+        "time": "03pm - 05pm",
+        "name": "Portfolio Review, Rewards and Ending Presentation"
+      },
+      {
+        "time": "08pm - 06am",
+        "name": "GREATE PARTY!!!"
+      },
+      {
+        "time": "06pm - 12am",
+        "name": "Похмелье"
+      }
+    ]
+  },
   "contacts": {
     "email": "pavel.alpinweb@yandex.ru",
     "address": "Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia",
