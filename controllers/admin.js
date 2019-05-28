@@ -35,3 +35,8 @@ module.exports.contacts = function(req, res){
   db.set("contacts", req.body).write();
   res.send("Контакты обновленны!");
 };
+
+module.exports.events = function(req, res){
+  db.set("events", req.body).write();
+  res.send("Список событий обновлен!");
+};

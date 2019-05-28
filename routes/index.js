@@ -9,5 +9,6 @@ router.get("/admin", ctrlAdmin.get);
 router.post("/welcomeText", ctrlAdmin.welcomeText);
 router.post("/promoText", ctrlAdmin.promoText);
 router.post("/contacts", ctrlAdmin.contacts);
+router.post("/events", ctrlAdmin.events);
 
 module.exports = router;
