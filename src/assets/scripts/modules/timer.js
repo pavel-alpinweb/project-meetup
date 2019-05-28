@@ -24,8 +24,6 @@ $(function () {
         
             days = pad( parseInt(+seconds_left / 86400) );
             seconds_left = seconds_left % 86400;
-
-            console.log(+target_date);
                 
             hours = pad( parseInt(seconds_left / 3600) );
             seconds_left = seconds_left % 3600;
