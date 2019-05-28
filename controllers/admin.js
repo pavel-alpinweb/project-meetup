@@ -20,3 +20,8 @@ module.exports.get = function(req, res) {
     speakers: speakers
   });
 };
+
+module.exports.welcomeText = function(req, res){
+  db.set("welcomeText", req.body).write();
+  res.send("Приветственный текст обновлен!");
+};

@@ -6,5 +6,6 @@ const ctrlAdmin = require("../controllers/admin");
 
 router.get("/", ctrlHome.get);
 router.get("/admin", ctrlAdmin.get);
+router.post("/welcomeText", ctrlAdmin.welcomeText);
 
 module.exports = router;

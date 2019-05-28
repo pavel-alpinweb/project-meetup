@@ -1,335 +1,335 @@
 {
-    "header": {
-        "timerYear" : 2019,
-        "timerMounth": 7,
-        "timerDays": 2,
-        "emailForRegistration": "pavel.alpinweb@yandex.ru"
+  "header": {
+    "timerYear": 2019,
+    "timerMounth": 7,
+    "timerDays": 2,
+    "emailForRegistration": "pavel.alpinweb@yandex.ru"
+  },
+  "mainBackgorund": "content/workplace-1245776_1920.jpg",
+  "welcomeText": {
+    "title": "Welcome!!!",
+    "text": "<p>Это приветственный текст, который был выведен из админки</p>\n\n<p><b>The biggest envato community</b> meetup in Bangladesh is happening right now! And you can be a part of it too...</p><p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p><p>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>"
+  },
+  "promoText": {
+    "title": "We reward the Elites!",
+    "text": "<p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p><p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p><p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>",
+    "link": "http://google.com"
+  },
+  "gallery": [
+    {
+      "src": "content/action-2277292_1920.jpg"
     },
-    "mainBackgorund": "content/workplace-1245776_1920.jpg",
-    "welcomeText": {
-        "title": "Welcome!",
-        "text": "<p>The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p><p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p><p>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>"
+    {
+      "src": "content/writer-1421099_1920.jpg"
     },
-    "promoText": {
-        "title": "We reward the Elites!",
-        "text": "<p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p><p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p><p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>",
-        "link": "http://google.com"
+    {
+      "src": "content/beautiful-1274056_1920.jpg"
     },
-    "gallery": [
-        {
-            "src": "content/action-2277292_1920.jpg"
-        },
-        {
-            "src": "content/writer-1421099_1920.jpg"
-        },
-        {
-            "src": "content/beautiful-1274056_1920.jpg"
-        },
-        {
-            "src": "content/beautiful-1274361_1920.jpg"
-        },
-        {
-            "src": "content/entrepreneur-593358_1920.jpg"
-        },
-        {
-            "src": "content/face-984031_1920.jpg"
-        },
-        {
-            "src": "content/face-2936245_1920.jpg"
-        },
-        {
-            "src": "content/guitarist-407212_1920.jpg"
-        },
-        {
-            "src": "content/man-2037255_1920.jpg"
-        },
-        {
-            "src": "content/woman-1149911_1920.jpg"
-        },
-        {
-            "src": "content/workplace-1245776_1920.jpg"
-        }
-    ],
-    "events": [
-        {
-            "time": "10am - 12pm",
-            "name": "Introduction and presentations about Envato"
-        },
-        {
-            "time": "12pm - 02pm",
-            "name": "Sessions by honorable guests and Speakers"
-        },
-        {
-            "time": "02pm - 03pm",
-            "name": "Introduction and presentations about Envato"
-        },
-        {
-            "time": "03pm - 05pm",
-            "name": "Portfolio Review, Rewards and Ending Presentation"
-        },
-        {
-            "time": "08pm - 06am",
-            "name": "GREATE PARTY!!!"
-        }
-    ],
-    "contacts": {
-        "email": "pavel.alpinweb@yandex.ru",
-        "address": "Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia",
-        "map": "<a class='dg-widget-link' href='http://2gis.kg/bishkek/firm/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap'>Посмотреть на карте Бишкека</a><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/firm/70000001019772265/photos/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos'>Фотографии компании</a></div><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/center/74.593397,42.875199/zoom/16/routeTab/rsType/bus/to/74.593397,42.875199╎Lion, сеть магазинов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route'>Найти проезд до Lion, сеть магазинов</a></div><script charset='utf-8' src='https://widgets.2gis.com/js/DGWidgetLoader.js'></script><script charset='utf-8'>new DGWidgetLoader({'pos':{'lat':42.8757754045956,'lon':74.59339141845705,'zoom':16},'opt':{'city':'bishkek'},'org':[{'id':'70000001019772265'}]});</script><noscript style='color:#c00;font-size:16px;font-weight:bold;'>Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>",
-        "social": [
-            {
-                "name": "facebook",
-                "empty": false,
-                "link": "facebook.com"
-            },
-            {
-                "name": "twitter",
-                "empty": false,
-                "link": "twitter.com"
-            },
-            {
-                "name": "behance",
-                "empty": false,
-                "link": "behance.com"
-            },
-            {
-                "name": "linkedin",
-                "empty": false,
-                "link": "linkedin.com"
-            },
-            {
-                "name": "dribbble",
-                "empty": false,
-                "link": "dribbble.com"
-            },
-            {
-                "name": "google-plus",
-                "empty": true,
-                "link": "google-plus.com"
-            },
-            {
-                "name": "tumblr",
-                "empty": true,
-                "link": ""
-            }
-        ]
+    {
+      "src": "content/beautiful-1274361_1920.jpg"
     },
-    "speakers": [
-        {
-            "name": "John Lenon",
-            "description": "Greate artist",
-            "photo": "content/guitarist-407212_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": false,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": true,
-                    "link": "linkedin.com"
-                }
-            ]
-        },
-        {
-            "name": "Iran Adlerr",
-            "description": "Injeneer",
-            "photo": "content/writer-1421099_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": true,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        },
-        {
-            "name": "Ilon Mask",
-            "description": "Writer",
-            "photo": "content/entrepreneur-593358_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": false,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        },
-        {
-            "name": "Maria Bezdornova",
-            "description": "Make America greate again",
-            "photo": "content/woman-1149911_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": true,
-                    "link": ""
-                },
-                {
-                    "name": "behance",
-                    "empty": true,
-                    "link": ""
-                },
-                {
-                    "name": "linkedin",
-                    "empty": true,
-                    "link": ""
-                }
-            ]
-        },
-        {
-            "name": "Johny Cash",
-            "description": "Climbe to Chan-Tengri",
-            "photo": "content/face-984031_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": false,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        },
-        {
-            "name": "Alina Abakirova",
-            "description": "Greate doctor",
-            "photo": "content/face-2936245_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": false,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        },
-        {
-            "name": "Den Shlebin",
-            "description": "Make culture revolution in Russia",
-            "photo": "content/man-2037255_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": true,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": true,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        }, 
-        {
-            "name": "Vitalia Panteleichuk",
-            "description": "Best girl on the Earth",
-            "photo": "content/beautiful-1274056_1920.jpg",
-            "social": [
-                {
-                    "name": "facebook",
-                    "empty": false,
-                    "link": "facebook.com"
-                },
-                {
-                    "name": "twitter",
-                    "empty": false,
-                    "link": "twitter.com"
-                },
-                {
-                    "name": "behance",
-                    "empty": false,
-                    "link": "behance.com"
-                },
-                {
-                    "name": "linkedin",
-                    "empty": false,
-                    "link": "linkedin.com"
-                }
-            ]
-        }
+    {
+      "src": "content/entrepreneur-593358_1920.jpg"
+    },
+    {
+      "src": "content/face-984031_1920.jpg"
+    },
+    {
+      "src": "content/face-2936245_1920.jpg"
+    },
+    {
+      "src": "content/guitarist-407212_1920.jpg"
+    },
+    {
+      "src": "content/man-2037255_1920.jpg"
+    },
+    {
+      "src": "content/woman-1149911_1920.jpg"
+    },
+    {
+      "src": "content/workplace-1245776_1920.jpg"
+    }
+  ],
+  "events": [
+    {
+      "time": "10am - 12pm",
+      "name": "Introduction and presentations about Envato"
+    },
+    {
+      "time": "12pm - 02pm",
+      "name": "Sessions by honorable guests and Speakers"
+    },
+    {
+      "time": "02pm - 03pm",
+      "name": "Introduction and presentations about Envato"
+    },
+    {
+      "time": "03pm - 05pm",
+      "name": "Portfolio Review, Rewards and Ending Presentation"
+    },
+    {
+      "time": "08pm - 06am",
+      "name": "GREATE PARTY!!!"
+    }
+  ],
+  "contacts": {
+    "email": "pavel.alpinweb@yandex.ru",
+    "address": "Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia",
+    "map": "<a class='dg-widget-link' href='http://2gis.kg/bishkek/firm/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap'>Посмотреть на карте Бишкека</a><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/firm/70000001019772265/photos/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos'>Фотографии компании</a></div><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/center/74.593397,42.875199/zoom/16/routeTab/rsType/bus/to/74.593397,42.875199╎Lion, сеть магазинов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route'>Найти проезд до Lion, сеть магазинов</a></div><script charset='utf-8' src='https://widgets.2gis.com/js/DGWidgetLoader.js'></script><script charset='utf-8'>new DGWidgetLoader({'pos':{'lat':42.8757754045956,'lon':74.59339141845705,'zoom':16},'opt':{'city':'bishkek'},'org':[{'id':'70000001019772265'}]});</script><noscript style='color:#c00;font-size:16px;font-weight:bold;'>Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>",
+    "social": [
+      {
+        "name": "facebook",
+        "empty": false,
+        "link": "facebook.com"
+      },
+      {
+        "name": "twitter",
+        "empty": false,
+        "link": "twitter.com"
+      },
+      {
+        "name": "behance",
+        "empty": false,
+        "link": "behance.com"
+      },
+      {
+        "name": "linkedin",
+        "empty": false,
+        "link": "linkedin.com"
+      },
+      {
+        "name": "dribbble",
+        "empty": false,
+        "link": "dribbble.com"
+      },
+      {
+        "name": "google-plus",
+        "empty": true,
+        "link": "google-plus.com"
+      },
+      {
+        "name": "tumblr",
+        "empty": true,
+        "link": ""
+      }
     ]
+  },
+  "speakers": [
+    {
+      "name": "John Lenon",
+      "description": "Greate artist",
+      "photo": "content/guitarist-407212_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": false,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": true,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Iran Adlerr",
+      "description": "Injeneer",
+      "photo": "content/writer-1421099_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": true,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Ilon Mask",
+      "description": "Writer",
+      "photo": "content/entrepreneur-593358_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": false,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Maria Bezdornova",
+      "description": "Make America greate again",
+      "photo": "content/woman-1149911_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": true,
+          "link": ""
+        },
+        {
+          "name": "behance",
+          "empty": true,
+          "link": ""
+        },
+        {
+          "name": "linkedin",
+          "empty": true,
+          "link": ""
+        }
+      ]
+    },
+    {
+      "name": "Johny Cash",
+      "description": "Climbe to Chan-Tengri",
+      "photo": "content/face-984031_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": false,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Alina Abakirova",
+      "description": "Greate doctor",
+      "photo": "content/face-2936245_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": false,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Den Shlebin",
+      "description": "Make culture revolution in Russia",
+      "photo": "content/man-2037255_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": true,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": true,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    },
+    {
+      "name": "Vitalia Panteleichuk",
+      "description": "Best girl on the Earth",
+      "photo": "content/beautiful-1274056_1920.jpg",
+      "social": [
+        {
+          "name": "facebook",
+          "empty": false,
+          "link": "facebook.com"
+        },
+        {
+          "name": "twitter",
+          "empty": false,
+          "link": "twitter.com"
+        },
+        {
+          "name": "behance",
+          "empty": false,
+          "link": "behance.com"
+        },
+        {
+          "name": "linkedin",
+          "empty": false,
+          "link": "linkedin.com"
+        }
+      ]
+    }
+  ]
 }

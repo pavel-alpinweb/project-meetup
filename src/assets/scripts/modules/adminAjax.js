@@ -1,10 +1,7 @@
-export default function sendData(url, data, message) {
+export default function sendData(url, data) {
     $('[data-role="ajaxPreloader"]').fadeIn();
-    $.post( url, data, function( data ) {
-        console.log(data);
-    })
-    .done(function() {
-        $('[data-role="server message"]').removeClass('hide').removeClass('m-fail').text(message);
+    $.post( url, data, function( answer ) {
+        $('[data-role="server message"]').removeClass('hide').removeClass('m-fail').text(answer);
     })
     .fail(function() {
         $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Что-то пошло не так!');
