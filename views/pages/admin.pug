@@ -14,9 +14,9 @@ block content
             +title('title--center title--light', 'Страница администратора')
         .admin__grid
             .admin__item
-                +file-form()
-            .admin__item
                 +one-field-form('Дата для таймера', 'text', `${header.timerYear}, ${header.timerMounth}, ${header.timerDays}`, 'timer-input', `${header.timerYear}, ${header.timerMounth}, ${header.timerDays}`)
+            .admin__item
+                +file-form()
             .admin__item
                 +one-field-form('Email для заявок', 'email', header.emailForRegistration, 'email-reg-input', 'Введите email')
             .admin__item

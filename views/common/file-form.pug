@@ -1,10 +1,14 @@
 include ../common/big-button
+include ../common/add-button
 
 mixin file-form()
     form.one-field-form.form(action="/")
         .form__item
             .form__title Изображение главного экрана
         .form__item
-            input.form__input(type="file" data-role="file-input" )
+            img(src=`${mainBackgorund}`, alt="Изображение главного экрана", data-role="preview-main-bg")
+        .form__item
+            input.form__input.hide(type="file", data-role="file-input")
+            +add-button('add-bg-file','Выбирите изображение')
         .form__item
             +big-button('', 'Сохранить', 'upload-file')
