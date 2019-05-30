@@ -1,4 +1,7 @@
 const db = require("../models/db");
+const fs = require("fs");
+const multiparty = require('multiparty');
+
 const header = db.getState().header;
 const mainBackgorund = db.getState().mainBackgorund;
 const welcomeText = db.getState().welcomeText;
@@ -44,4 +47,47 @@ module.exports.events = function(req, res){
 module.exports.headerSettings = function(req, res){
   db.set("header", req.body).write();
   res.send("Настройки главного экрана обновленны!");
+};
+
+module.exports.mainBackgorund = function(req, res){
+    // create a form to begin parsing
+    var form = new multiparty.Form();
+    var uploadFile = {uploadPath: ''};
+    var errors = [];
+
+    form.on('error', function(err){
+        if(fs.existsSync(uploadFile.path)) {
+            fs.unlinkSync(uploadFile.path);
+            console.log('error');
+        }
+    });
+
+    form.on('close', function() {
+        if(errors.length == 0) {
+            res.send({status: 'ok', text: 'Изображение сохраненно!'});
+        }
+        else {
+            if(fs.existsSync(uploadFile.path)) {
+                fs.unlinkSync(uploadFile.path);
+            }
+            res.send({status: 'bad', errors: errors});
+        }
+    });
+
+    // listen on part event for image file
+    form.on('part', function(part) {
+        uploadFile.path = "./public/content/" + part.filename;
+
+        if(errors.length == 0) {
+            var out = fs.createWriteStream(uploadFile.path);
+            part.pipe(out);
+            db.set("mainBackgorund", `content/${part.filename}`).write();
+        }
+        else {
+            part.resume();
+        }
+    });
+
+    // parse the form
+    form.parse(req);
 };

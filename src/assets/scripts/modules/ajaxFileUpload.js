@@ -14,11 +14,18 @@ export default function sendFile(file, url) {
             if (response.status == 'ok') {
                 $('[data-role="server message"]').removeClass('hide').removeClass('m-fail').text(response.text);
                 $('[data-role="ajaxPreloader"]').fadeOut();
+                var hideMessage = setTimeout(function(){
+                    $('[data-role="server message"]').addClass('hide');
+                }, 3000);
             }
             else {
-                $('[data-role="server message"]').removeClass('hide').removeClass('m-fail').text(response.errors);
+                $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text(response.errors);
                 $('[data-role="ajaxPreloader"]').fadeOut();
+                var hideMessage = setTimeout(function(){
+                    $('[data-role="server message"]').addClass('hide');
+                }, 3000);
             }
+
         }
     });
 };
