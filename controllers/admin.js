@@ -11,6 +11,53 @@ const events = db.getState().events;
 const contacts = db.getState().contacts;
 const speakers = db.getState().speakers;
 
+function saveFile(req, res, dbFunction){
+  // create a form to begin parsing
+  var form = new multiparty.Form();
+  var uploadFile = {uploadPath: ''};
+  var errors = [];
+
+  form.on('error', function(err){
+      if(fs.existsSync(uploadFile.path)) {
+          fs.unlinkSync(uploadFile.path);
+          console.log('error');
+      }
+  });
+
+  form.on('close', function() {
+      if(errors.length == 0) {
+          res.send({status: 'ok', text: 'Изображение сохраненно!'});
+      }
+      else {
+          if(fs.existsSync(uploadFile.path)) {
+              fs.unlinkSync(uploadFile.path);
+          }
+          res.send({status: 'bad', errors: errors});
+      }
+  });
+
+  // listen on part event for image file
+  form.on('part', function(part) {
+      uploadFile.path = "./public/content/" + part.filename;
+
+      if(errors.length == 0) {
+          var out = fs.createWriteStream(uploadFile.path);
+          part.pipe(out);
+          dbFunction(part.filename);
+      }
+      else {
+          part.resume();
+      }
+  });
+
+  // parse the form
+  form.parse(req);
+}
+
+function saveMainBgInDB(filename){
+  db.set("mainBackgorund", `content/${filename}`).write()
+}
+
 module.exports.get = function(req, res) {
   res.render("pages/admin", {
     header: header,
@@ -48,53 +95,6 @@ module.exports.headerSettings = function(req, res){
   db.set("header", req.body).write();
   res.send("Настройки главного экрана обновленны!");
 };
-
-function saveFile(req, res, dbFunction){
-    // create a form to begin parsing
-    var form = new multiparty.Form();
-    var uploadFile = {uploadPath: ''};
-    var errors = [];
-
-    form.on('error', function(err){
-        if(fs.existsSync(uploadFile.path)) {
-            fs.unlinkSync(uploadFile.path);
-            console.log('error');
-        }
-    });
-
-    form.on('close', function() {
-        if(errors.length == 0) {
-            res.send({status: 'ok', text: 'Изображение сохраненно!'});
-        }
-        else {
-            if(fs.existsSync(uploadFile.path)) {
-                fs.unlinkSync(uploadFile.path);
-            }
-            res.send({status: 'bad', errors: errors});
-        }
-    });
-
-    // listen on part event for image file
-    form.on('part', function(part) {
-        uploadFile.path = "./public/content/" + part.filename;
-
-        if(errors.length == 0) {
-            var out = fs.createWriteStream(uploadFile.path);
-            part.pipe(out);
-            dbFunction(part.filename);
-        }
-        else {
-            part.resume();
-        }
-    });
-
-    // parse the form
-    form.parse(req);
-}
-
-function saveMainBgInDB(filename){
-  db.set("mainBackgorund", `content/${filename}`).write()
-}
 
 module.exports.mainBackgorund = function(req, res){
   saveFile(req, res, saveMainBgInDB);
