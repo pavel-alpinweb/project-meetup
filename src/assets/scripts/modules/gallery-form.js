@@ -57,3 +57,19 @@ $('[data-role="upload-image"]').click(function (e) {
         failMessage('Выберите изображение для загрузки');
     }
 });
+
+$('[data-role="delete-image"]').click(function (e) {
+    $('[data-role="ajaxPreloader"]').fadeIn();
+    e.preventDefault();
+    var container = $(this).parents('[data-role="image-container"]');
+    var id = $(this).attr('data-id');
+    $.ajax({
+        url: '/gallery/' + id,
+        type: 'DELETE',
+        success: function(result) {
+            container.remove();
+            $('[data-role="ajaxPreloader"]').fadeOut();
+            failMessage(result);
+        }
+    });
+});

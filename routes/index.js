@@ -13,5 +13,6 @@ router.post("/events", ctrlAdmin.events);
 router.post("/headerSettings", ctrlAdmin.headerSettings);
 router.post("/mainBackgorund", ctrlAdmin.mainBackgorund);
 router.post("/gallery", ctrlAdmin.gallery);
+router.delete("/gallery/:id", ctrlAdmin.galleryDelete);
 
 module.exports = router;

@@ -111,3 +111,10 @@ module.exports.mainBackgorund = function(req, res){
 module.exports.gallery = function(req, res){
   saveFile(req, res, saveGalleryInDb, gallery);
 }
+
+module.exports.galleryDelete = function(req, res){
+  const id = parseInt(req.params.id);
+  console.log(req.params.id);
+  db.get('gallery').remove({ id: id }).write();
+  res.send("Изображение удаленно!");
+}
