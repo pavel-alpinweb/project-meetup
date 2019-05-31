@@ -1,4 +1,5 @@
 import sendFile from './ajaxFileUpload';
+import failMessage from './fail-message';
 
 $('[data-role="add-bg-file"]').click(function (e) { 
     e.preventDefault();
@@ -19,16 +20,10 @@ $('[data-role="file-input"]').change(function () {
             $('[data-role="preview-main-bg"]').attr('src', reader.result); 
         } else if(!isValidType) {
             $('[data-role="file-input"]').val("");
-            $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Можно загружать только изображения форматов: png, jpeg, jpg');
-            var hideMessage = setTimeout(function(){
-                $('[data-role="server message"]').addClass('hide');
-            }, 3000);
+            failMessage('Можно загружать только изображения форматов: png, jpeg, jpg');
         } else if(!isValidSize){
             $('[data-role="file-input"]').val("");
-            $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Файл не должен привышать размер 2mb');
-            var hideMessage = setTimeout(function(){
-                $('[data-role="server message"]').addClass('hide');
-            }, 3000);
+            failMessage('Файл не должен привышать размер 2mb');
         }
     }
     reader.readAsDataURL(file);
@@ -41,9 +36,6 @@ $('[data-role="upload-file"]').click(function (e) {
     if($('[data-role="file-input"]').val() != ""){
         sendFile(uploadingFile, '/mainBackgorund');
     } else {
-        $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Выбирите изображения для загрузки');
-        var hideMessage = setTimeout(function(){
-            $('[data-role="server message"]').addClass('hide');
-        }, 3000);
+        failMessage('Выбирите изображение для загрузки');
     }
 });
