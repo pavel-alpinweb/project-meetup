@@ -81,37 +81,37 @@
     "social": [
       {
         "name": "facebook",
-        "link": "facebook.com",
+        "link": "http://facebook.com",
         "empty": "false"
       },
       {
         "name": "twitter",
-        "link": "twitter.com",
+        "link": "http://twitter.com",
         "empty": "false"
       },
       {
         "name": "behance",
-        "link": "behance.com",
+        "link": "http://behance.com",
         "empty": "false"
       },
       {
         "name": "linkedin",
-        "link": "linkedin.com",
+        "link": "http://linkedin.com",
         "empty": "false"
       },
       {
         "name": "dribbble",
-        "link": "dribbble.com",
+        "link": "http://dribbble.com",
         "empty": "true"
       },
       {
         "name": "google-plus",
-        "link": "google-plus.com",
+        "link": "http://google-plus.com",
         "empty": "true"
       },
       {
         "name": "tumblr",
-        "link": "tumbler.com",
+        "link": "http://tumbler.com",
         "empty": "true"
       }
     ]
