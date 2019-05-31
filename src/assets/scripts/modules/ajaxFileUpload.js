@@ -1,6 +1,6 @@
 import failMessage from './fail-message';
 
-export default function sendFile(file, url) {
+export default function sendFile(file, url, callback) {
     $('[data-role="ajaxPreloader"]').fadeIn();
     var data = new FormData();
     data.append('uploadFile', file);
@@ -19,6 +19,8 @@ export default function sendFile(file, url) {
                 var hideMessage = setTimeout(function(){
                     $('[data-role="server message"]').addClass('hide');
                 }, 3000);
+
+                callback(response.data)
             }
             else {
                 $('[data-role="ajaxPreloader"]').fadeOut();

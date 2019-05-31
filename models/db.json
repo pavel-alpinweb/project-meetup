@@ -17,37 +17,28 @@
   },
   "gallery": [
     {
-      "src": "content/action-2277292_1920.jpg"
+      "src": "content/formacao_cristo-e-o-melhor-modelo-de-lideranca-1600x1200.jpg",
+      "id": 1559290981135
     },
     {
-      "src": "content/writer-1421099_1920.jpg"
+      "src": "content/workplace-1245776_1920.jpg",
+      "id": 1559291295918
     },
     {
-      "src": "content/beautiful-1274056_1920.jpg"
+      "src": "content/action-2277292_1920.jpg",
+      "id": 1559291344955
     },
     {
-      "src": "content/beautiful-1274361_1920.jpg"
+      "src": "content/guitarist-407212_1920.jpg",
+      "id": 1559291589796
     },
     {
-      "src": "content/entrepreneur-593358_1920.jpg"
+      "src": "content/entrepreneur-593358_1920.jpg",
+      "id": 1559291642187
     },
     {
-      "src": "content/face-984031_1920.jpg"
-    },
-    {
-      "src": "content/face-2936245_1920.jpg"
-    },
-    {
-      "src": "content/guitarist-407212_1920.jpg"
-    },
-    {
-      "src": "content/man-2037255_1920.jpg"
-    },
-    {
-      "src": "content/woman-1149911_1920.jpg"
-    },
-    {
-      "src": "content/workplace-1245776_1920.jpg"
+      "src": "content/face-2936245_1920.jpg",
+      "id": 1559291661763
     }
   ],
   "events": {

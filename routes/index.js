@@ -12,5 +12,6 @@ router.post("/contacts", ctrlAdmin.contacts);
 router.post("/events", ctrlAdmin.events);
 router.post("/headerSettings", ctrlAdmin.headerSettings);
 router.post("/mainBackgorund", ctrlAdmin.mainBackgorund);
+router.post("/gallery", ctrlAdmin.gallery);
 
 module.exports = router;

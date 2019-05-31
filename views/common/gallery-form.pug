@@ -6,16 +6,16 @@ mixin gallery-form(array)
         .form__item
             .form__title Галлерея
         .form__item
-            .gallery-form__grid
+            .gallery-form__grid(data-role="gallery-form-container")
                 each image in array
                     .gallery-form__image-container
-                        .gallery-form__button(data-role="delete-image")
+                        .gallery-form__button(data-role="delete-image", data-id=`${image.id}`)
                             +icon('More_icon', 'gallery-form__delete')
                         img(src=`${image.src}`, alt="img")
-        .form__item(data-role="preview-container")
         .form__item
             input.form__input.hide(type="file", placeholder="Выбыирите изображение", data-role="gallery-file-input")
-            +add-button('add-gallery-file','Выбирите изображение')
+            +add-button('add-gallery-file','Выберите изображение')
         .form__item
             +big-button('', 'Загрузить', 'upload-image')
+        .form__item(data-role="preview-container")
         

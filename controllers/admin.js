@@ -11,7 +11,7 @@ const events = db.getState().events;
 const contacts = db.getState().contacts;
 const speakers = db.getState().speakers;
 
-function saveFile(req, res, dbFunction){
+function saveFile(req, res, dbFunction, callbackdata){
   // create a form to begin parsing
   var form = new multiparty.Form();
   var uploadFile = {uploadPath: ''};
@@ -26,7 +26,7 @@ function saveFile(req, res, dbFunction){
 
   form.on('close', function() {
       if(errors.length == 0) {
-          res.send({status: 'ok', text: 'Изображение сохраненно!'});
+          res.send({status: 'ok', text: 'Изображение сохраненно!', data: callbackdata});
       }
       else {
           if(fs.existsSync(uploadFile.path)) {
@@ -55,7 +55,15 @@ function saveFile(req, res, dbFunction){
 }
 
 function saveMainBgInDB(filename){
-  db.set("mainBackgorund", `content/${filename}`).write()
+  db.set("mainBackgorund", `content/${filename}`).write();
+}
+
+function saveGalleryInDb(filename){
+  db.get("gallery").push({
+    src: `content/${filename}`,
+    id: Date.now(),
+  })
+  .write();
 }
 
 module.exports.get = function(req, res) {
@@ -98,4 +106,8 @@ module.exports.headerSettings = function(req, res){
 
 module.exports.mainBackgorund = function(req, res){
   saveFile(req, res, saveMainBgInDB);
+}
+
+module.exports.gallery = function(req, res){
+  saveFile(req, res, saveGalleryInDb, gallery);
 }

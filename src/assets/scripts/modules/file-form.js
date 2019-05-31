@@ -1,12 +1,12 @@
 import sendFile from './ajaxFileUpload';
 import failMessage from './fail-message';
 
+var uploadingFile;
+
 $('[data-role="add-bg-file"]').click(function (e) { 
     e.preventDefault();
     $('[data-role="file-input"]').click();
 });
-
-var uploadingFile;
 
 $('[data-role="file-input"]').change(function () { 
     var file = this.files[0];
@@ -36,6 +36,6 @@ $('[data-role="upload-file"]').click(function (e) {
     if($('[data-role="file-input"]').val() != ""){
         sendFile(uploadingFile, '/mainBackgorund');
     } else {
-        failMessage('Выбирите изображение для загрузки');
+        failMessage('Выберите изображение для загрузки');
     }
 });
