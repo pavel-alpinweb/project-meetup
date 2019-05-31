@@ -154,6 +154,34 @@
           "link": "linkedin.com"
         }
       ]
+    },
+    {
+      "name": "Joseph Solutionfix",
+      "description": "Greate programmer. Sensei of Pavel",
+      "photo": "content/20141104143155_0.jpg",
+      "id": "1559309540767",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "behance.com",
+          "empty": "false"
+        },
+        {
+          "name": "linkedin",
+          "link": "linkedin.com",
+          "empty": "false"
+        }
+      ]
     }
   ]
 }

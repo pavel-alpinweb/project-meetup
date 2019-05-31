@@ -117,3 +117,8 @@ module.exports.galleryDelete = function(req, res){
   db.get('gallery').remove({ id: id }).write();
   res.send("Изображение удаленно!");
 }
+
+module.exports.speakersList = function(req, res){
+  db.get("speakers").push(req.body).write();
+  res.send("Новый спикер добавлен!");
+}

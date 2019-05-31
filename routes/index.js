@@ -14,5 +14,6 @@ router.post("/headerSettings", ctrlAdmin.headerSettings);
 router.post("/mainBackgorund", ctrlAdmin.mainBackgorund);
 router.post("/gallery", ctrlAdmin.gallery);
 router.delete("/gallery/:id", ctrlAdmin.galleryDelete);
+router.post("/speakersList", ctrlAdmin.speakersList);
 
 module.exports = router;

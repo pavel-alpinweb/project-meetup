@@ -2,6 +2,35 @@ import sendData from './adminAjax';
 
 var tableRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
 
+function sendSpeakerData(speakerForm){
+    var speakerObject = {};
+    speakerObject.name = speakerForm.find('[data-input="name"]').val();
+    speakerObject.description = speakerForm.find('[data-input="description"]').val();
+    speakerObject.photo = speakerForm.find('[data-input="photo"]').val();
+    speakerObject.id = Date.now();
+    
+    speakerForm.attr('id', speakerObject.id);
+
+    var speakersSocialList = [];
+    var speakerSocialElement = speakerForm.find('[data-role="social-input"]');
+    speakerSocialElement.each(function(){
+        var socialObject = {};
+        socialObject.name = $(this).attr('data-name');
+        socialObject.link = $(this).val();
+        if($(this).parents('[data-role="social-input-container"]').hasClass('is-active')){
+            socialObject.empty = false;
+        } else {
+            socialObject.empty = true;
+        }
+        speakersSocialList.push(socialObject);
+    });
+
+    speakerObject.social = speakersSocialList;
+
+    console.log(speakerObject);
+    sendData("/speakersList", speakerObject);
+}
+
 $('body').on('click', '[data-role="remove-table-row-speakers"]', function (e) {
     e.preventDefault();
     $(this).parents('[data-role="speakers-form-row"]').remove();
@@ -28,36 +57,12 @@ $('[data-role="add-table-row-speakers"]').click(function (e) {
     tableRow.clone().appendTo('[data-role="speakers-form"]  [data-role="form-body"]');
 });
 
-$('[data-role="save-table-speakers"]').click(function (e) { 
+$('[data-role="save-new-speaker"]').click(function (e) { 
+    var speaker = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
     e.preventDefault();
-    var speakersArray = [];
-    var speakers = $('[data-role="speakers-form"] [data-role="form-row"]');
-    speakers.each(function(){
-        var speakerObject = {};
+    sendSpeakerData(speaker);
+});
 
-        speakerObject.name = $(this).find('[data-input="name"]').val();
-        speakerObject.description = $(this).find('[data-input="description"]').val();
-        speakerObject.photo = $(this).find('[data-input="photo"]').val();
-
-        
-        var speakersSocialList = [];
-        var speakerSocialElement = $(this).find('[data-role="social-input"]');
-        speakerSocialElement.each(function(){
-            var socialObject = {};
-            socialObject.name = $(this).attr('data-name');
-            socialObject.link = $(this).val();
-            if($(this).parents('[data-role="social-input-container"]').hasClass('is-active')){
-                socialObject.empty = false;
-            } else {
-                socialObject.empty = true;
-            }
-            speakersSocialList.push(socialObject);
-        });
-
-        speakerObject.social = speakersSocialList;
-
-        speakersArray.push(speakerObject);
-    });
-    console.log(speakersArray);
-    sendData("/speakersList", speakersArray);
+$('[data-role="save-speaker"]').click(function (e) { 
+    e.preventDefault();
 });

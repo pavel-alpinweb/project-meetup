@@ -14,7 +14,7 @@ mixin speakers-form(array)
                     .table__cell-title.table__cell-mini 
             .table__body(data-role="form-body")
                 each speaker in array
-                    .table__row.table__row--auto-height(data-role="form-row")
+                    .table__row.table__row--auto-height(data-role="form-row", id=`${speaker.id}`)
                         .table__cell-content.table__cell-middle 
                             input.form-2__input(type="text", placeholder="Имя", value=`${speaker.name}`, data-input="name")
                         .table__cell-content.table__cell-middle 
@@ -22,7 +22,7 @@ mixin speakers-form(array)
                         .table__cell-content.table__cell-middle 
                             .speakers-form__image
                                 img(src=`${speaker.photo}`, alt="img")
-                            input.form-2__input(type="file", placeholder="Фото спикера", data-input="photo")
+                            input.form-2__input(type="text", placeholder="Фото спикера", data-input="photo", value=`${speaker.photo}`)
                         .table__cell-content.table__cell-middle 
                             each item in speaker.social
                                 +social-input(item.name, item.link, item.empty, '')
