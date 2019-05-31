@@ -1,16 +1,21 @@
 include ../common/big-button
+include ../common/add-button
 
 mixin gallery-form(array)
     form.gallery-form.form(action="/")
         .form__item
             .form__title Галлерея
-        .gallery-form__grid
-            each image in array
-                .gallery-form__image-container
-                    .gallery-form__button(data-role="delete-image")
-                        +icon('More_icon', 'gallery-form__delete')
-                    img(src=`${image.src}`, alt="img")
         .form__item
-            input.form__input(type="file" placeholder="Выбыирите изображение" )
+            .gallery-form__grid
+                each image in array
+                    .gallery-form__image-container
+                        .gallery-form__button(data-role="delete-image")
+                            +icon('More_icon', 'gallery-form__delete')
+                        img(src=`${image.src}`, alt="img")
+        .form__item(data-role="preview-container")
+        .form__item
+            input.form__input.hide(type="file", placeholder="Выбыирите изображение", data-role="gallery-file-input")
+            +add-button('add-gallery-file','Выбирите изображение')
         .form__item
             +big-button('', 'Загрузить', 'upload-image')
+        
