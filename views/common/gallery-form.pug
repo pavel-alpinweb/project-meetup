@@ -8,7 +8,7 @@ mixin gallery-form(array)
         .form__item
             .gallery-form__grid(data-role="gallery-form-container")
                 each image in array
-                    .gallery-form__image-container(data-role="image-container")
+                    .gallery-form__image-container(data-role="image-container", id=`${image.id}`)
                         .gallery-form__button(data-role="delete-image", data-id=`${image.id}`)
                             +icon('More_icon', 'gallery-form__delete')
                         img(src=`${image.src}`, alt="img")

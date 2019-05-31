@@ -8,7 +8,7 @@ function renderNewImage(array){
     $('[data-role="preview-container"]').html('');
     $('[data-role="gallery-file-input"]').val("");
     var newImageMarkup = 
-    '<div class="gallery-form__image-container">' +
+    '<div class="gallery-form__image-container" id="' + newImage.id + '">' +
         '<div class="gallery-form__button" data-role="delete-image" data-id="' + newImage.id + '">' + 
             '<svg class="gallery-form__delete"><use xlink:href="assets/images/icons/sprite.svg#More_icon"></use></svg>' +
         '</div>' + 
@@ -58,11 +58,12 @@ $('[data-role="upload-image"]').click(function (e) {
     }
 });
 
-$('[data-role="delete-image"]').click(function (e) {
+$('body').on('click', '[data-role="delete-image"]', function () {
     $('[data-role="ajaxPreloader"]').fadeIn();
-    e.preventDefault();
-    var container = $(this).parents('[data-role="image-container"]');
+    
     var id = $(this).attr('data-id');
+    var container = $(this).parent('#' + id);
+    console.log(container);
     $.ajax({
         url: '/gallery/' + id,
         type: 'DELETE',
