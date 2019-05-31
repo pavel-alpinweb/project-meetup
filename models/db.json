@@ -102,17 +102,17 @@
       {
         "name": "dribbble",
         "link": "dribbble.com",
-        "empty": "false"
+        "empty": "true"
       },
       {
         "name": "google-plus",
         "link": "google-plus.com",
-        "empty": "false"
+        "empty": "true"
       },
       {
         "name": "tumblr",
         "link": "tumbler.com",
-        "empty": "false"
+        "empty": "true"
       }
     ]
   },
