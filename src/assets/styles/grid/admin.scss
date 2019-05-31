@@ -26,3 +26,10 @@
         grid-column: span 3;
     }
 }
+
+.admin__nav{
+    background-color: $mainBgColor;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
