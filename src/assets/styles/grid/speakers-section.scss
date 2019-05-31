@@ -24,32 +24,24 @@
 .speakers-section__grid{
     display: grid;
     grid-template-columns: 296px 296px 296px;
-    grid-template-rows: 296px 296px 296px;
+    grid-template-rows: auto;
     grid-column-gap: 40px;
     grid-row-gap: 45px;
     @media screen and (max-width:1023.5px){
         grid-column-gap: 30px;
         grid-row-gap: 30px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 296px 296px 296px 296px;
     }
     @media screen and (max-width:767.5px){
         grid-column-gap: 0;
         grid-template-columns: 100%;
-        grid-template-rows: inherit;
     }
-}
-
-.speakers-section__center-grid{
-    border-radius: 15px;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    padding: 30px;
 }
 
 .speakers-section__border-grid{
     border-radius: 15px;
     background-color: $accentColor;
+    height: 296px;
     @media screen and (max-width:767.5px){
         min-height: 296px;
         height: 100%;
