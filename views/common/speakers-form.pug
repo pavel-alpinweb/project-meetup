@@ -26,8 +26,11 @@ mixin speakers-form(array)
                         .table__cell-content.table__cell-middle 
                             each item in speaker.social
                                 +social-input(item.name, item.link, item.empty, '')
-                        .table__cell-content.table__cell-mini 
-                            +big-button('', 'Удалить', 'remove-table-row')
+                        .table__cell-content.table__cell-mini.speakers-form__speaker-control
+                            .speakers-form__container
+                                +big-button('big-button--red', 'Удалить', 'remove-table-row')
+                            .speakers-form__container
+                                +big-button('', 'Сохранить', 'save-speaker')
         .speakers-form__control
-            +big-button('', 'Сохранить', 'save-table-speakers')
+            +big-button('', 'Сохранить', 'save-new-speaker')
             +big-button('', 'Добавить', 'add-table-row-speakers')
