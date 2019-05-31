@@ -49,7 +49,7 @@ module.exports.headerSettings = function(req, res){
   res.send("Настройки главного экрана обновленны!");
 };
 
-module.exports.mainBackgorund = function(req, res){
+function saveFile(req, res, dbFunction){
     // create a form to begin parsing
     var form = new multiparty.Form();
     var uploadFile = {uploadPath: ''};
@@ -81,7 +81,7 @@ module.exports.mainBackgorund = function(req, res){
         if(errors.length == 0) {
             var out = fs.createWriteStream(uploadFile.path);
             part.pipe(out);
-            db.set("mainBackgorund", `content/${part.filename}`).write();
+            dbFunction(part.filename);
         }
         else {
             part.resume();
@@ -90,4 +90,12 @@ module.exports.mainBackgorund = function(req, res){
 
     // parse the form
     form.parse(req);
-};
+}
+
+function saveMainBgInDB(filename){
+  db.set("mainBackgorund", `content/${filename}`).write()
+}
+
+module.exports.mainBackgorund = function(req, res){
+  saveFile(req, res, saveMainBgInDB);
+}
