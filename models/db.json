@@ -137,29 +137,253 @@
   },
   "speakers": [
     {
-      "name": "Joseph Solutionfix",
-      "description": "Greate programmer. Sensei of Pavel",
-      "photo": "content/guitarist-407212_1920.jpg",
+      "name": "Ilon Mask",
+      "description": "Build Rocket to the Mars",
+      "photo": "content/Edward_Elric_Exploitable.jpg",
       "id": "1559375577276",
       "social": [
         {
           "name": "facebook",
-          "link": "facebook.com",
+          "link": "http://facebook.com",
           "empty": "false"
         },
         {
           "name": "twitter",
-          "link": "twitter.com",
+          "link": "http://twitter.com",
           "empty": "false"
         },
         {
           "name": "behance",
-          "link": "behance.com",
+          "link": "http://behance.com",
           "empty": "false"
         },
         {
           "name": "linkedin",
-          "link": "linkedin.com",
+          "link": "http://linkedin.com",
+          "empty": "false"
+        }
+      ]
+    },
+    {
+      "name": "Mark Bezdornov",
+      "description": "Make Greates game in history",
+      "photo": "content/entrepreneur-593358_1920.jpg",
+      "id": "1559385572322",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "twitter",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "behance",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
+          "empty": "true"
+        }
+      ]
+    },
+    {
+      "name": "Maria Bezdornova",
+      "description": "Make Balet make again",
+      "photo": "content/woman-1149911_1920.jpg",
+      "id": "1559386366008",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "http://behance.com",
+          "empty": "false"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
+          "empty": "false"
+        }
+      ]
+    },
+    {
+      "name": "Den Shlebin",
+      "description": "Write poem about Ecology",
+      "photo": "content/guitarist-407212_1920.jpg",
+      "id": "1559386474198",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "linkedin",
+          "link": "",
+          "empty": "true"
+        }
+      ]
+    },
+    {
+      "name": "Joseph Solutionfix",
+      "description": "Create cool websites. Teacher of Pavel",
+      "photo": "content/20141104143155_0.jpg",
+      "id": "1559386632527",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "twitter",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "behance",
+          "link": "",
+          "empty": "true"
+        },
+        {
+          "name": "linkedin",
+          "link": "",
+          "empty": "true"
+        }
+      ]
+    },
+    {
+      "name": "Iran Adler",
+      "description": "Deceive Sherlock holmes",
+      "photo": "content/writer-1421099_1920.jpg",
+      "id": "1559386788710",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "http://behance.com",
+          "empty": "false"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
+          "empty": "false"
+        }
+      ]
+    },
+    {
+      "name": "Johny Cash",
+      "description": "Play rock music",
+      "photo": "content/face-984031_1920.jpg",
+      "id": "1559386955496",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "true"
+        },
+        {
+          "name": "behance",
+          "link": "http://behance.com",
+          "empty": "true"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
+          "empty": "false"
+        }
+      ]
+    },
+    {
+      "name": "Vitaliya Panteleichu",
+      "description": "Best girl on the Earth",
+      "photo": "content/beautiful-1274056_1920.jpg",
+      "id": "1559387073741",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "http://behance.com",
+          "empty": "false"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
+          "empty": "false"
+        }
+      ]
+    },
+    {
+      "name": "Alina Abakirova",
+      "description": "Greate doctor",
+      "photo": "content/face-2936245_1920.jpg",
+      "id": "1559387473185",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "http://facebook.com",
+          "empty": "false"
+        },
+        {
+          "name": "twitter",
+          "link": "http://twitter.com",
+          "empty": "false"
+        },
+        {
+          "name": "behance",
+          "link": "http://behance.com",
+          "empty": "false"
+        },
+        {
+          "name": "linkedin",
+          "link": "http://linkedin.com",
           "empty": "false"
         }
       ]

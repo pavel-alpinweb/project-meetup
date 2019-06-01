@@ -3,5 +3,5 @@ mixin social-list(array, mod)
         each item in array
             if item.empty != "true"
                 li.social-list__item
-                    a.social-list__link(href=`${item.link}`)
+                    a.social-list__link(href=`${item.link}`, target="blank")
                         +icon(`${item.name}-icon`, `social-list__icon social-list__icon--${item.name}`)

@@ -17,5 +17,6 @@ router.delete("/gallery/:id", ctrlAdmin.galleryDelete);
 router.post("/speakersList", ctrlAdmin.speakersList);
 router.post("/speaker/:id", ctrlAdmin.speaker);
 router.delete("/speaker/:id", ctrlAdmin.deleteSpeaker);
+router.post("/speaker-photo", ctrlAdmin.addPhotoSpeaker);
 
 module.exports = router;

@@ -1,4 +1,5 @@
 include ../common/big-button
+include ../common/add-button
 include ../common/mixins
 include ../common/social-input
 
@@ -13,6 +14,7 @@ mixin speakers-form(array)
                     .table__cell-title.table__cell-middle Соц.сети
                     .table__cell-title.table__cell-mini 
             .table__body(data-role="form-body")
+            
                 each speaker in array
                     .table__row.table__row--auto-height(data-role="form-row", id=`${speaker.id}`)
                         .table__cell-content.table__cell-middle 
@@ -21,8 +23,11 @@ mixin speakers-form(array)
                             input.form-2__input(type="text", placeholder="Описание", value=`${speaker.description}`, data-input="description")
                         .table__cell-content.table__cell-middle 
                             .speakers-form__image
-                                img(src=`${speaker.photo}`, alt="img")
-                            input.form-2__input(type="text", placeholder="Фото спикера", data-input="photo", value=`${speaker.photo}`)
+                                img(src=`${speaker.photo}`, alt="img", data-role="speaker-photo-preview")
+                            input.form-2__input.hide(type="text", placeholder="Фото спикера", data-input="photo-url", value=`${speaker.photo}`)
+                            input.form-2__input.hide(type="file", placeholder="Фото спикера", data-input="speaker-file")
+                            .speakers-form__file-button
+                                +add-button('add-speaker-photo', 'Выберите фото для спикера')
                         .table__cell-content.table__cell-middle 
                             each item in speaker.social
                                 +social-input(item.name, item.link, item.empty, '')

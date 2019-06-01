@@ -43,7 +43,9 @@ function saveFile(req, res, dbFunction, callbackdata){
       if(errors.length == 0) {
           var out = fs.createWriteStream(uploadFile.path);
           part.pipe(out);
-          dbFunction(part.filename);
+          if(dbFunction){
+            dbFunction(part.filename);
+          }
       }
       else {
           part.resume();
@@ -131,7 +133,10 @@ module.exports.speaker = function(req, res){
 
 module.exports.deleteSpeaker = function(req, res){
   const id = req.params.id;
-  console.log(id);
   db.get("speakers").remove({ id: id }).write();
   res.send("Спикер удален!");
+}
+
+module.exports.addPhotoSpeaker = function(req, res){
+  saveFile(req, res);
 }
