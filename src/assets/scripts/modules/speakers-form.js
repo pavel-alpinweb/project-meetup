@@ -1,4 +1,5 @@
 import sendData from './adminAjax';
+import failMessage from './fail-message';
 
 var tableRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
 
@@ -34,11 +35,6 @@ function sendSpeakerData(url, speakerForm, isNew){
     console.log(speakerObject);
     sendData(url, speakerObject);
 }
-
-$('body').on('click', '[data-role="remove-table-row-speakers"]', function (e) {
-    e.preventDefault();
-    $(this).parents('[data-role="speakers-form-row"]').remove();
-});
 
 $('body').on('click', '[data-role="soc-flag"]', function () {
     if($(this).next().val() != ''){
@@ -79,4 +75,20 @@ $('body').on('click', '[data-role="save-speaker"]', function (e) {
     var speakerId = $(this).parents('[data-role="form-row"]').attr('id');
     var speaker = $('#' + speakerId);
     sendSpeakerData('/speaker/' + speakerId, speaker, false);
+});
+
+$('body').on('click', '[data-role="remove-table-row-speakers"]', function (e) {
+    e.preventDefault();
+    $('[data-role="ajaxPreloader"]').fadeIn();
+    var id =  $(this).parents('[data-role="form-row"]').attr('id');
+    var container = $(this).parents('#' + id);
+    $.ajax({
+        url: '/speaker/' + id,
+        type: 'DELETE',
+        success: function(result) {
+            container.remove();
+            $('[data-role="ajaxPreloader"]').fadeOut();
+            failMessage(result);
+        }
+    });
 });

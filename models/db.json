@@ -163,34 +163,6 @@
           "empty": "true"
         }
       ]
-    },
-    {
-      "name": "John Lenon",
-      "description": "Greate musician",
-      "photo": "content/guitarist-407212_1920.jpg",
-      "id": "1559368057778",
-      "social": [
-        {
-          "name": "facebook",
-          "link": "facebook.com",
-          "empty": "true"
-        },
-        {
-          "name": "twitter",
-          "link": "twitter.com",
-          "empty": "true"
-        },
-        {
-          "name": "behance",
-          "link": "behance.com",
-          "empty": "true"
-        },
-        {
-          "name": "linkedin",
-          "link": "linkedin.com",
-          "empty": "true"
-        }
-      ]
     }
   ]
 }

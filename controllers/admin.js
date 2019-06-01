@@ -128,3 +128,10 @@ module.exports.speaker = function(req, res){
   db.get("speakers").find({ id: id }).assign(req.body).write();
   res.send("Данные спикера обновленны!");
 }
+
+module.exports.deleteSpeaker = function(req, res){
+  const id = req.params.id;
+  console.log(id);
+  db.get("speakers").remove({ id: id }).write();
+  res.send("Спикер удален!");
+}
