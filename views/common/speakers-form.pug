@@ -14,7 +14,27 @@ mixin speakers-form(array)
                     .table__cell-title.table__cell-middle Соц.сети
                     .table__cell-title.table__cell-mini 
             .table__body(data-role="form-body")
-            
+                .table__row.table__row--auto-height.hide(data-role="form-row", id="speaker-placeholder")
+                    .table__cell-content.table__cell-middle 
+                        input.form-2__input(type="text", placeholder="Имя", value="", data-input="name")
+                    .table__cell-content.table__cell-middle 
+                        input.form-2__input(type="text", placeholder="Описание", value="", data-input="description")
+                    .table__cell-content.table__cell-middle 
+                        .speakers-form__image
+                            img(src="content/placeholder.jpg", alt="img", data-role="speaker-photo-preview")
+                        input.form-2__input.hide(type="text", placeholder="Фото спикера", data-input="photo-url", value="")
+                        input.form-2__input.hide(type="file", placeholder="Фото спикера", data-input="speaker-file")
+                        .speakers-form__file-button
+                            +add-button('add-speaker-photo', 'Выберите фото для спикера')
+                    .table__cell-content.table__cell-middle 
+                        - var social = ["facebook","twitter","behance","linkedin",]
+                        each item in social 
+                            +social-input(item, "", "true", '')
+                    .table__cell-content.table__cell-mini.speakers-form__speaker-control
+                        .speakers-form__container
+                            +big-button('big-button--red', 'Удалить', 'remove-table-row-speakers')
+                        .speakers-form__container
+                            +big-button('', 'Сохранить', 'save-speaker')              
                 each speaker in array
                     .table__row.table__row--auto-height(data-role="form-row", id=`${speaker.id}`)
                         .table__cell-content.table__cell-middle 

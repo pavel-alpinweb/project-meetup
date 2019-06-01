@@ -2,7 +2,7 @@ import sendData from './adminAjax';
 import failMessage from './fail-message';
 import sendFileWithCallback from './ajaxFileObject';
 
-var tableRow = $('#speaker-placeholder').removeClass('hide').clone();
+var tableRow = $('#speaker-placeholder').clone().removeClass('hide');
 var uploadingFile;
 
 function sendSpeakerData(url, speakerForm, isNew, callback){
