@@ -122,3 +122,9 @@ module.exports.speakersList = function(req, res){
   db.get("speakers").push(req.body).write();
   res.send("Новый спикер добавлен!");
 }
+
+module.exports.speaker = function(req, res){
+  const id = req.params.id;
+  db.get("speakers").find({ id: id }).assign(req.body).write();
+  res.send("Данные спикера обновленны!");
+}

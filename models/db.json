@@ -5,7 +5,7 @@
     "timerDays": "3",
     "emailForRegistration": "pavel.alpinweb@gmail.com"
   },
-  "mainBackgorund": "content/workplace-1245776_1920.jpg",
+  "mainBackgorund": "content/formacao_cristo-e-o-melhor-modelo-de-lideranca-1600x1200.jpg",
   "welcomeText": {
     "title": "Welcome!!!",
     "text": "<p>Это приветственный текст, который был выведен из админки</p>\n\n<p><b>The biggest envato community</b> meetup in Bangladesh is happening right now! And you can be a part of it too...</p><p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p><p>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>"
@@ -34,31 +34,39 @@
     },
     {
       "src": "content/20141104143155_0.jpg",
-      "id": 1559301743133
+      "id": 1559366827771
     },
     {
-      "src": "content/beautiful-1274361_1920.jpg",
-      "id": 1559301775444
-    },
-    {
-      "src": "content/face-2936245_1920.jpg",
-      "id": 1559301783412
+      "src": "content/entrepreneur-593358_1920.jpg",
+      "id": 1559366869216
     },
     {
       "src": "content/face-984031_1920.jpg",
-      "id": 1559301789485
+      "id": 1559366875147
+    },
+    {
+      "src": "content/face-2936245_1920.jpg",
+      "id": 1559366881204
     },
     {
       "src": "content/guitarist-407212_1920.jpg",
-      "id": 1559301801552
-    },
-    {
-      "src": "content/woman-1149911_1920.jpg",
-      "id": 1559301813506
+      "id": 1559366888920
     },
     {
       "src": "content/writer-1421099_1920.jpg",
-      "id": 1559301822779
+      "id": 1559366904061
+    },
+    {
+      "src": "content/beautiful-1274361_1920.jpg",
+      "id": 1559366928686
+    },
+    {
+      "src": "content/woman-1149911_1920.jpg",
+      "id": 1559367153725
+    },
+    {
+      "src": "content/man-2037255_1920.jpg",
+      "id": 1559367175572
     }
   ],
   "events": {
@@ -130,36 +138,9 @@
   "speakers": [
     {
       "name": "John Lenon",
-      "description": "Greate artist",
+      "description": "Greate musician",
       "photo": "content/guitarist-407212_1920.jpg",
-      "social": [
-        {
-          "name": "facebook",
-          "empty": "false",
-          "link": "facebook.com"
-        },
-        {
-          "name": "twitter",
-          "empty": "false",
-          "link": "twitter.com"
-        },
-        {
-          "name": "behance",
-          "empty": "false",
-          "link": "behance.com"
-        },
-        {
-          "name": "linkedin",
-          "empty": "true",
-          "link": "linkedin.com"
-        }
-      ]
-    },
-    {
-      "name": "Joseph Solutionfix",
-      "description": "Greate programmer. Sensei of Pavel",
-      "photo": "content/20141104143155_0.jpg",
-      "id": "1559309540767",
+      "id": "1",
       "social": [
         {
           "name": "facebook",
@@ -174,12 +155,40 @@
         {
           "name": "behance",
           "link": "behance.com",
-          "empty": "false"
+          "empty": "true"
         },
         {
           "name": "linkedin",
           "link": "linkedin.com",
-          "empty": "false"
+          "empty": "true"
+        }
+      ]
+    },
+    {
+      "name": "John Lenon",
+      "description": "Greate musician",
+      "photo": "content/guitarist-407212_1920.jpg",
+      "id": "1559368057778",
+      "social": [
+        {
+          "name": "facebook",
+          "link": "facebook.com",
+          "empty": "true"
+        },
+        {
+          "name": "twitter",
+          "link": "twitter.com",
+          "empty": "true"
+        },
+        {
+          "name": "behance",
+          "link": "behance.com",
+          "empty": "true"
+        },
+        {
+          "name": "linkedin",
+          "link": "linkedin.com",
+          "empty": "true"
         }
       ]
     }

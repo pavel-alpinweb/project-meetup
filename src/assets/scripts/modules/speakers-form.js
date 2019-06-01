@@ -2,14 +2,18 @@ import sendData from './adminAjax';
 
 var tableRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
 
-function sendSpeakerData(speakerForm){
+function sendSpeakerData(url, speakerForm, isNew){
     var speakerObject = {};
     speakerObject.name = speakerForm.find('[data-input="name"]').val();
     speakerObject.description = speakerForm.find('[data-input="description"]').val();
     speakerObject.photo = speakerForm.find('[data-input="photo"]').val();
-    speakerObject.id = Date.now();
+    if(isNew){
+        speakerObject.id = Date.now();    
+        speakerForm.attr('id', speakerObject.id);
+    } else {
+        speakerObject.id = speakerForm.attr('id');
+    }
     
-    speakerForm.attr('id', speakerObject.id);
 
     var speakersSocialList = [];
     var speakerSocialElement = speakerForm.find('[data-role="social-input"]');
@@ -28,7 +32,7 @@ function sendSpeakerData(speakerForm){
     speakerObject.social = speakersSocialList;
 
     console.log(speakerObject);
-    sendData("/speakersList", speakerObject);
+    sendData(url, speakerObject);
 }
 
 $('body').on('click', '[data-role="remove-table-row-speakers"]', function (e) {
@@ -60,9 +64,19 @@ $('[data-role="add-table-row-speakers"]').click(function (e) {
 $('[data-role="save-new-speaker"]').click(function (e) { 
     var speaker = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
     e.preventDefault();
-    sendSpeakerData(speaker);
+    sendSpeakerData('/speakersList', speaker, true);
 });
 
 $('[data-role="save-speaker"]').click(function (e) { 
+    var speakerId = $(this).parents('[data-role="form-row"]').attr('id');
+    var speaker = $('#' + speakerId);
     e.preventDefault();
+    sendSpeakerData('/speaker/' + speakerId, speaker, false);
+});
+
+$('body').on('click', '[data-role="save-speaker"]', function (e) {
+    e.preventDefault();
+    var speakerId = $(this).parents('[data-role="form-row"]').attr('id');
+    var speaker = $('#' + speakerId);
+    sendSpeakerData('/speaker/' + speakerId, speaker, false);
 });
