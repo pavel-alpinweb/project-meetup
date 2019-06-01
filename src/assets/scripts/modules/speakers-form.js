@@ -3,7 +3,7 @@ import failMessage from './fail-message';
 
 var tableRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
 
-function sendSpeakerData(url, speakerForm, isNew){
+function sendSpeakerData(url, speakerForm, isNew, callback){
     var speakerObject = {};
     speakerObject.name = speakerForm.find('[data-input="name"]').val();
     speakerObject.description = speakerForm.find('[data-input="description"]').val();
@@ -33,7 +33,15 @@ function sendSpeakerData(url, speakerForm, isNew){
     speakerObject.social = speakersSocialList;
 
     console.log(speakerObject);
-    sendData(url, speakerObject);
+    sendData(url, speakerObject, callback);
+}
+
+function addNewSpeakerCallback(newRow){
+    $('[data-role="add-table-row-speakers"]').removeClass('hide');
+    $('[data-role="save-new-speaker"]').addClass('hide');
+    var newRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
+    newRow.find('[data-role="save-speaker"]').removeClass('hide');
+    newRow.find('[data-role="remove-table-row-speakers"]').removeClass('hide');
 }
 
 $('body').on('click', '[data-role="soc-flag"]', function () {
@@ -55,12 +63,17 @@ $('body').on('focusout', '[data-role="social-input"]', function () {
 $('[data-role="add-table-row-speakers"]').click(function (e) { 
     e.preventDefault();
     tableRow.clone().appendTo('[data-role="speakers-form"]  [data-role="form-body"]');
+    var newRow = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
+    newRow.find('[data-role="save-speaker"]').addClass('hide');
+    newRow.find('[data-role="remove-table-row-speakers"]').addClass('hide');
+    $(this).addClass('hide');
+    $('[data-role="save-new-speaker"]').removeClass('hide');   
 });
 
 $('[data-role="save-new-speaker"]').click(function (e) { 
     var speaker = $('[data-role="speakers-form"] [data-role="form-row"]:last-child');
     e.preventDefault();
-    sendSpeakerData('/speakersList', speaker, true);
+    sendSpeakerData('/speakersList', speaker, true, addNewSpeakerCallback);
 });
 
 $('[data-role="save-speaker"]').click(function (e) { 

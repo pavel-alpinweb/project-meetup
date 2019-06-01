@@ -140,7 +140,7 @@
       "name": "Joseph Solutionfix",
       "description": "Greate programmer. Sensei of Pavel",
       "photo": "content/guitarist-407212_1920.jpg",
-      "id": "1559374247600",
+      "id": "1559375577276",
       "social": [
         {
           "name": "facebook",
@@ -155,12 +155,12 @@
         {
           "name": "behance",
           "link": "behance.com",
-          "empty": "true"
+          "empty": "false"
         },
         {
           "name": "linkedin",
           "link": "linkedin.com",
-          "empty": "true"
+          "empty": "false"
         }
       ]
     }
