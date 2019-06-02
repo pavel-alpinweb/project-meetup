@@ -30,7 +30,7 @@ module.exports.signupMail = function(req, res){
     from: 'test@example.com',
     subject: 'Email form project Meetup',
     html: `
-      <h1>Новоя заявка на регистрацию на митап</h1>
+      <h1>Новоя заявка на регистрацию на встречу</h1>
       <p><b>Имя: </b>${name}</p>
       <p><b>Email: </b>${email}</p>
       <p><b>Телефон: </b>${phone}</p>
@@ -38,5 +38,5 @@ module.exports.signupMail = function(req, res){
     `
   };
   sgMail.send(msg);
-  res.redirect("/");
+  res.send("Your request has been sent successfully!");
 }

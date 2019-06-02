@@ -10,6 +10,7 @@
     font-size: 18px;
     color: #fff;
     font-family: $mainFont;
+    z-index: 9;
     &.m-fail{
         background-color: red;
         box-shadow: 0 0 15px 5px #000;
