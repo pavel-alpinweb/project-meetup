@@ -18,6 +18,7 @@ $('[data-role="file-input"]').change(function () {
         var isValidSize = file.size / 1024 / 1024 < 2;
         if(isValidType && isValidSize){
             $('[data-role="preview-main-bg"]').attr('src', reader.result); 
+            $('[data-role="admin-container"]').attr('style','background-image: url(' + reader.result + ');');
         } else if(!isValidType) {
             $('[data-role="file-input"]').val("");
             failMessage('Можно загружать только изображения форматов: png, jpeg, jpg');

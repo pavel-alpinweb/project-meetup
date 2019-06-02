@@ -9,7 +9,7 @@ include ../common/speakers-form
 include ../common/file-form
 
 block content
-    .admin
+    .admin(data-role="admin-container", style=`background-image: url('${mainBackgorund}');`)
         .admin__nav
             a.big-button(href="/") Домой
         .admin__title
