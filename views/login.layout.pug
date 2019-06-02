@@ -12,5 +12,7 @@ html(lang="ru")
     link(rel='stylesheet' href='assets/styles/main.min.css')
   body
     main.maincontent.login-page(style=`background-image:url(${mainBackgorund})`)
+        .login-page__nav
+          include ./common/logo
         .login-page__container
             block content

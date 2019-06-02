@@ -1,12 +1,19 @@
 .login-page{
     background-position: top center;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
+    position: relative;
 }
 
 .login-page__container{
     width: 100%;
     max-width: 430px;
     margin: auto;
+}
+
+.login-page__nav{
+    position: absolute;
+    top:30px;
+    left: 30px;
 }

@@ -11,7 +11,7 @@ include ../common/file-form
 block content
     .admin(data-role="admin-container", style=`background-image: url('${mainBackgorund}');`)
         .admin__nav
-            a.big-button(href="/") Домой
+            include ../common/logo
         .admin__title
             +title('title--center title--light', 'Страница администратора')
         .admin__grid
