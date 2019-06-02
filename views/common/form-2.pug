@@ -1,7 +1,7 @@
-form.form-2(action="/", method="post")
+form.form-2(action="/textMail", method="post", data-role="contact-form")
     .form-2__item
-        input.form-2__input(type="email", placeholder="Enter your email")
+        input.form-2__input(type="email", placeholder="Enter your email", name="email", required)
     .form-2__item
-        textarea.form-2__textarea(placeholder="Type your message")
+        textarea.form-2__textarea(placeholder="Type your message", name="message", required)
     .form-2__item
-        button.form-2__submit Send Message
+        button.form-2__submit(data-role="send-contact-mail") Send Message

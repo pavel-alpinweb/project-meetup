@@ -6,3 +6,4 @@ import "./modules/gallery";
 import "./modules/switch-content";
 import "./modules/menu";  
 import "./modules/signup-email-form";  
+import "./modules/contacts-form";  

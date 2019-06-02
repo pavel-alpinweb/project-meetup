@@ -40,3 +40,19 @@ module.exports.signupMail = function(req, res){
   sgMail.send(msg);
   res.send("Your request has been sent successfully!");
 }
+
+module.exports.textMail = function(req, res){
+  const { email, message } = req.body;
+  const msg = {
+    to: contacts.email,
+    from: 'test@example.com',
+    subject: 'Email form project Meetup',
+    html: `
+      <h1>Новое сообщение от пользователя</h1>
+      <p><b>Email: </b>${email}</p>
+      <p><b>Текст: </b>${message}</p>
+    `
+  };
+  sgMail.send(msg);
+  res.send("Your mail has been sent successfully!");
+}
