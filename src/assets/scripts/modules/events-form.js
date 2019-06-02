@@ -29,9 +29,9 @@ $('[data-role="save-table-events"]').click(function (e) {
     eventsRowsArray.rows = eventsArray
 
     if(eventsRows.length == 0){
-        $('[data-role="server message"]').removeClass('hide').addClass('m-fail').text('Необходимо добавить хотябы одно событие!');
+        $('[data-role="server-message"]').removeClass('hide').addClass('m-fail').text('Необходимо добавить хотябы одно событие!');
         var hideMessage = setTimeout(function(){
-            $('[data-role="server message"]').addClass('hide');
+            $('[data-role="server-message"]').addClass('hide');
         }, 3000);
     } else {
         sendData("/events", eventsRowsArray);

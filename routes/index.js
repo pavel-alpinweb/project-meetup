@@ -3,9 +3,11 @@ const router = express.Router();
 
 const ctrlHome = require("../controllers/home");
 const ctrlAdmin = require("../controllers/admin");
+const ctrlLogin = require("../controllers/login");
 
 router.get("/", ctrlHome.get);
 router.get("/admin", ctrlAdmin.get);
+router.get("/login", ctrlLogin.get);
 router.post("/welcomeText", ctrlAdmin.welcomeText);
 router.post("/promoText", ctrlAdmin.promoText);
 router.post("/contacts", ctrlAdmin.contacts);
