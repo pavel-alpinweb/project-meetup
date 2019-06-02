@@ -37,5 +37,6 @@ router.post("/speaker/:id", ctrlAdmin.speaker);
 router.delete("/speaker/:id", ctrlAdmin.deleteSpeaker);
 router.post("/speaker-photo", ctrlAdmin.addPhotoSpeaker);
 router.post("/login", ctrlLogin.enter);
+router.post("/signupMail", ctrlHome.signupMail);
 
 module.exports = router;
