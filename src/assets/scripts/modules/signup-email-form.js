@@ -13,7 +13,7 @@ $('[data-role="send-signUp-mail"]').click(function (e) {
         mailObject.username = "Не указан"; 
     }
     if(mailObject.name == "" || mailObject.email == "" || mailObject.phone == ""){
-        failMessage("Fileds: name, phone, email is required");
+        failMessage("Fileds: name, phone and email is required");
     } else {
         sendData("/signupMail", mailObject);
     }
