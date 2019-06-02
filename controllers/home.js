@@ -24,12 +24,18 @@ module.exports.get = function(req, res) {
 };
 
 module.exports.signupMail = function(req, res){
+  const { name, email, phone, username } = req.body;
   const msg = {
-    to: 'pavel.alpinweb@yandex.ru',
+    to: header.emailForRegistration,
     from: 'test@example.com',
-    subject: 'Sending with Twilio SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    subject: 'Email form project Meetup',
+    html: `
+      <h1>Новоя заявка на регистрацию на митап</h1>
+      <p><b>Имя: </b>${name}</p>
+      <p><b>Email: </b>${email}</p>
+      <p><b>Телефон: </b>${phone}</p>
+      <p><b>Пользователь: </b>${username}</p>
+    `
   };
   sgMail.send(msg);
   res.redirect("/");
