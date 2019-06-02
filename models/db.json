@@ -1,8 +1,8 @@
 {
   "header": {
     "timerYear": "2019",
-    "timerMounth": "6",
-    "timerDays": "3",
+    "timerMounth": "12",
+    "timerDays": "31",
     "emailForRegistration": "pavel.alpinweb@yandex.ru"
   },
   "mainBackgorund": "content/Mar-15-16-HowtoBuildaVideoMarketingBudgetFreeTemplate.jpg",
@@ -37,16 +37,8 @@
       "id": 1559366869216
     },
     {
-      "src": "content/face-984031_1920.jpg",
-      "id": 1559366875147
-    },
-    {
       "src": "content/guitarist-407212_1920.jpg",
       "id": 1559366888920
-    },
-    {
-      "src": "content/writer-1421099_1920.jpg",
-      "id": 1559366904061
     },
     {
       "src": "content/gettyimages-628319502.jpg",
@@ -59,6 +51,18 @@
     {
       "src": "content/Mar-15-16-HowtoBuildaVideoMarketingBudgetFreeTemplate.jpg",
       "id": 1559456134164
+    },
+    {
+      "src": "content/face-2936245_1920.jpg",
+      "id": 1559484645616
+    },
+    {
+      "src": "content/beautiful-1274361_1920.jpg",
+      "id": 1559484653354
+    },
+    {
+      "src": "content/writer-1421099_1920.jpg",
+      "id": 1559484696666
     }
   ],
   "events": {
@@ -86,7 +90,7 @@
     ]
   },
   "contacts": {
-    "email": "pavel.alpinweb@yandex.ru",
+    "email": "pavel.alpinweb@gmail.com",
     "address": "Kyrgyzstan, Bishkek city, Chatyrkulsky street 29 a",
     "map": "<a class='dg-widget-link' href='http://2gis.kg/bishkek/firm/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap'>Посмотреть на карте Бишкека</a><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/firm/70000001019772265/photos/70000001019772265/center/74.59339141845705,42.8757754045956/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos'>Фотографии компании</a></div><div class='dg-widget-link'><a href='http://2gis.kg/bishkek/center/74.593397,42.875199/zoom/16/routeTab/rsType/bus/to/74.593397,42.875199╎Lion, сеть магазинов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route'>Найти проезд до Lion, сеть магазинов</a></div><script charset='utf-8' src='https://widgets.2gis.com/js/DGWidgetLoader.js'></script><script charset='utf-8'>new DGWidgetLoader({'pos':{'lat':42.8757754045956,'lon':74.59339141845705,'zoom':16},'opt':{'city':'bishkek'},'org':[{'id':'70000001019772265'}]});</script><noscript style='color:#c00;font-size:16px;font-weight:bold;'>Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>",
     "social": [
