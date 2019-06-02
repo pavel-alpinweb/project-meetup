@@ -12,6 +12,7 @@ block content
     .admin(data-role="admin-container", style=`background-image: url('${mainBackgorund}');`)
         .admin__nav
             include ../common/logo
+            a(href="/out").big-button.admin__out Выйти
         .admin__title
             +title('title--center title--light', 'Страница администратора')
         .admin__grid

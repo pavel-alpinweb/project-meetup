@@ -23,6 +23,7 @@ const isAdmin = (req, res, next) => {
 router.get("/", ctrlHome.get);
 router.get("/admin", isAdmin, ctrlAdmin.get);
 router.get("/login", isAdmin, ctrlAdmin.get);
+router.get("/out", ctrlLogin.out);
 router.post("/welcomeText", ctrlAdmin.welcomeText);
 router.post("/promoText", ctrlAdmin.promoText);
 router.post("/contacts", ctrlAdmin.contacts);

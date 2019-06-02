@@ -19,3 +19,8 @@ module.exports.enter = function(req, res) {
     res.redirect("/login");
   }
 };
+
+module.exports.out = function(req, res) {
+  req.session.isAdmin = false;
+  res.redirect("/");
+};
