@@ -22,7 +22,7 @@ mixin speakers-form(array)
                     .table__cell-content.table__cell-middle 
                         .speakers-form__image
                             img(src="content/placeholder.jpg", alt="img", data-role="speaker-photo-preview")
-                        input.form-2__input.hide(type="text", placeholder="Фото спикера", data-input="photo-url", value="")
+                        input.form-2__input.hide(type="text", placeholder="Фото спикера", data-input="photo-url", value="content/placeholder.jpg")
                         input.form-2__input.hide(type="file", placeholder="Фото спикера", data-input="speaker-file")
                         .speakers-form__file-button
                             +add-button('add-speaker-photo', 'Выберите фото для спикера')
