@@ -5,7 +5,7 @@
     "timerDays": "3",
     "emailForRegistration": "pavel.alpinweb@gmail.com"
   },
-  "mainBackgorund": "content/guitarist-407212_1920.jpg",
+  "mainBackgorund": "content/Mar-15-16-HowtoBuildaVideoMarketingBudgetFreeTemplate.jpg",
   "welcomeText": {
     "title": "Welcome!",
     "text": "<p>Это приветственный текст, который был выведен из админки</p>\n\n<p><b>The biggest envato community</b> meetup in Bangladesh is happening right now! And you can be a part of it too...</p><p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p><p>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</p>"
@@ -29,10 +29,6 @@
       "id": 1559294656575
     },
     {
-      "src": "content/beautiful-1274056_1920.jpg",
-      "id": 1559294662094
-    },
-    {
       "src": "content/20141104143155_0.jpg",
       "id": 1559366827771
     },
@@ -45,10 +41,6 @@
       "id": 1559366875147
     },
     {
-      "src": "content/face-2936245_1920.jpg",
-      "id": 1559366881204
-    },
-    {
       "src": "content/guitarist-407212_1920.jpg",
       "id": 1559366888920
     },
@@ -57,16 +49,16 @@
       "id": 1559366904061
     },
     {
-      "src": "content/beautiful-1274361_1920.jpg",
-      "id": 1559366928686
+      "src": "content/gettyimages-628319502.jpg",
+      "id": 1559456124045
     },
     {
-      "src": "content/woman-1149911_1920.jpg",
-      "id": 1559367153725
+      "src": "content/How-to-make-a-Cloudflare-App_-Developer-Preview---May-11-2017---154721-3.jpg",
+      "id": 1559456129428
     },
     {
-      "src": "content/man-2037255_1920.jpg",
-      "id": 1559367175572
+      "src": "content/Mar-15-16-HowtoBuildaVideoMarketingBudgetFreeTemplate.jpg",
+      "id": 1559456134164
     }
   ],
   "events": {
@@ -278,7 +270,7 @@
     },
     {
       "name": "Iran Adler",
-      "description": "Deceive Sherlock holmes",
+      "description": "Deceive Sherlock Holmes",
       "photo": "content/writer-1421099_1920.jpg",
       "id": "1559386788710",
       "social": [
