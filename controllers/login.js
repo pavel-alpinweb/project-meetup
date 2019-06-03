@@ -1,10 +1,9 @@
 const db = require("../models/db");
 const psw = require("../libs/password");
-const mainBackgorund = db.getState().mainBackgorund;
 
 module.exports.get = function(req, res) {
     res.render("pages/login",{
-        mainBackgorund: mainBackgorund
+        mainBackgorund: db.getState().mainBackgorund
     });
 };
 

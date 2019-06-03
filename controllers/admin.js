@@ -70,14 +70,14 @@ function saveGalleryInDb(filename){
 
 module.exports.get = function(req, res) {
   res.render("pages/admin", {
-    header: header,
-    mainBackgorund: mainBackgorund,
-    welcomeText: welcomeText,
-    promoText: promoText,
-    gallery: gallery,
-    events: events,
-    contacts: contacts,
-    speakers: speakers
+    header: db.getState().header,
+    mainBackgorund: db.getState().mainBackgorund,
+    welcomeText: db.getState().welcomeText,
+    promoText: db.getState().promoText,
+    gallery: db.getState().gallery,
+    events: db.getState().events,
+    contacts: db.getState().contacts,
+    speakers: db.getState().speakers
   });
 };
 
