@@ -29,5 +29,5 @@ $('[data-role="save-contacts"]').click(function (e) {
     contactsSetting.social = socialListArray;
 
     console.log(contactsSetting); 
-    // sendData("/contacts", contactsSetting);
+    sendData("/contacts", contactsSetting);
 });
