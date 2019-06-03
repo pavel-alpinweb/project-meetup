@@ -1,6 +1,6 @@
 import Masonry from 'masonry-layout';
 
-$(document).ready(function () {
+$(window).load(function () {
   var elem = document.querySelector('.gallery');
   var msnry = new Masonry( elem, {
     // options
