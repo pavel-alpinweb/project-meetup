@@ -1,12 +1,4 @@
 const db = require("../models/db");
-const header = db.getState().header;
-const mainBackgorund = db.getState().mainBackgorund;
-const welcomeText = db.getState().welcomeText;
-const promoText = db.getState().promoText;
-const gallery = db.getState().gallery;
-const events = db.getState().events;
-const contacts = db.getState().contacts;
-const speakers = db.getState().speakers;
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
@@ -25,6 +17,7 @@ module.exports.get = function(req, res) {
 
 module.exports.signupMail = function(req, res){
   const { name, email, phone, username } = req.body;
+  const header = db.getState().header;
   const msg = {
     to: header.emailForRegistration,
     from: 'test@example.com',
@@ -43,6 +36,7 @@ module.exports.signupMail = function(req, res){
 
 module.exports.textMail = function(req, res){
   const { email, message } = req.body;
+  const contacts = db.getState().contacts;
   const msg = {
     to: contacts.email,
     from: 'test@example.com',
